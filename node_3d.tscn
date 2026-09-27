@@ -25,6 +25,43 @@ size = Vector3(0.1, 0.1, 0.1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_2h66b"]
 size = Vector3(0.15, 0.15, 0.15)
 
+[sub_resource type="StandardMaterial3D" id="Material_sphere"]
+albedo_color = Color(0.2, 0.65, 1, 1)
+metallic = 0.25
+roughness = 0.35
+
+[sub_resource type="SphereMesh" id="SphereMesh_interactive"]
+radius = 0.08
+height = 0.16
+
+[sub_resource type="SphereShape3D" id="SphereShape_interactive"]
+radius = 0.08
+
+[sub_resource type="StandardMaterial3D" id="Material_cylinder"]
+albedo_color = Color(1, 0.5, 0.16, 1)
+metallic = 0.15
+roughness = 0.4
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_interactive"]
+top_radius = 0.07
+bottom_radius = 0.07
+height = 0.16
+
+[sub_resource type="CylinderShape3D" id="CylinderShape_interactive"]
+height = 0.16
+radius = 0.07
+
+[sub_resource type="StandardMaterial3D" id="Material_cube"]
+albedo_color = Color(0.48, 0.9, 0.32, 1)
+metallic = 0.1
+roughness = 0.45
+
+[sub_resource type="BoxMesh" id="BoxMesh_interactive"]
+size = Vector3(0.14, 0.14, 0.14)
+
+[sub_resource type="BoxShape3D" id="BoxShape_interactive"]
+size = Vector3(0.14, 0.14, 0.14)
+
 [node name="Node3D" type="Node3D" unique_id=1589633361]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=168477728]
@@ -80,3 +117,56 @@ mesh = SubResource("PrismMesh_1ifcq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1274517323]
 shape = SubResource("BoxShape3D_2h66b")
+
+[node name="InteractiveSphere" type="RigidBody3D" parent="." unique_id=1716619464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 0.83, -1.8)
+script = ExtResource("2_noarx")
+display_name = "сфера"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveSphere" unique_id=2060007546]
+material_override = SubResource("Material_sphere")
+mesh = SubResource("SphereMesh_interactive")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractiveSphere" unique_id=1842340930]
+shape = SubResource("SphereShape_interactive")
+
+[node name="InteractiveCylinder" type="RigidBody3D" parent="." unique_id=1703705330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0.83, -1.8)
+script = ExtResource("2_noarx")
+display_name = "цилиндр"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveCylinder" unique_id=946971636]
+material_override = SubResource("Material_cylinder")
+mesh = SubResource("CylinderMesh_interactive")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractiveCylinder" unique_id=1140476773]
+shape = SubResource("CylinderShape_interactive")
+
+[node name="InteractiveCube" type="RigidBody3D" parent="." unique_id=67332260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82, -2.15)
+script = ExtResource("2_noarx")
+display_name = "куб"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveCube" unique_id=506466974]
+material_override = SubResource("Material_cube")
+mesh = SubResource("BoxMesh_interactive")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractiveCube" unique_id=231197853]
+shape = SubResource("BoxShape_interactive")
+
+[node name="Interface" type="CanvasLayer" parent="." unique_id=387767756]
+
+[node name="Crosshair" type="ColorRect" parent="Interface" unique_id=1945798021]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0.9)
