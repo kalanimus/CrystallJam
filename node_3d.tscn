@@ -46,6 +46,7 @@ physics_interpolation_mode = 2
 shape = SubResource("BoxShape3D_wcb3r")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/StaticBody3D/CollisionShape3D" unique_id=1831768278]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008743048, -0.0063841343, -0.0074931383)
 mesh = SubResource("BoxMesh_dqqax")
 
 [node name="JustObject" type="MeshInstance3D" parent="." unique_id=1307169475]
@@ -77,13 +78,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92098165, 2.2294493, 2.2034
 light_energy = 4.864
 area_size = Vector2(1, 1.1419287)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1730021922]
-physics_interpolation_mode = 1
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=986699429]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83691716, -1.4305907)
 script = ExtResource("2_noarx")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1671210099]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1671210099]
 mesh = SubResource("PrismMesh_1ifcq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1274517323]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1274517323]
 shape = SubResource("BoxShape3D_2h66b")
