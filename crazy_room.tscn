@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cvs0souu6h744" path="res://pers_anim2.tscn" id="2_47wem"]
 [ext_resource type="PackedScene" uid="uid://b88wcnwe7u8vv" path="res://dialogue_test.tscn" id="2_duj04"]
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="4_c8h5o"]
+[ext_resource type="Script" uid="uid://b2b501lo4h6ok" path="res://scripts/interactions/movable_timer.gd" id="5_timer"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_47wem"]
 radius = 0.25
@@ -12,6 +13,9 @@ height = 1.258606
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_wgn6i"]
 radius = 0.25
 height = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape_timer"]
+size = Vector3(0.5, 0.2, 0.05)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wgn6i"]
 size = Vector3(8, 1, 8)
@@ -100,6 +104,22 @@ is_overlay = true
 
 [node name="pers_anim" parent="." unique_id=1774098336 instance=ExtResource("2_47wem")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7138762, 0.5018285, -0.39224124)
+
+[node name="TextTimer" type="RigidBody3D" parent="." unique_id=1512402849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8862218, 1.3252343, -0.44693476)
+freeze = true
+script = ExtResource("5_timer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TextTimer" unique_id=257195434]
+shape = SubResource("BoxShape_timer")
+
+[node name="Display" type="Label3D" parent="TextTimer" unique_id=1814472037]
+transform = Transform3D(1.4552268, 0, 0.6764078, 0, 2.2970843, 0, -0.8740456, 0, 1.1261733, -0.009710012, -0.01798296, -0.05726731)
+pixel_size = 0.0015
+modulate = Color(0, 0, 0, 1)
+text = "10:00:00"
+font_size = 42
+outline_size = 4
 
 [node name="Area3D" type="Area3D" parent="." unique_id=339165968]
 
