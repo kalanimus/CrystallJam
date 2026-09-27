@@ -29,6 +29,14 @@ func _ready() -> void:
 	_update_slot_visuals()
 
 
+func _on_dialogue_started() -> void:
+	hide()
+
+
+func _on_dialogue_finished() -> void:
+	show()
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:

@@ -34,6 +34,7 @@ var _current_speaker: String = ""
 
 func _ready() -> void:
 	set_process(false)
+	hide()
 	_gdsam.set_audio_stream_callback(_stream_from_buffer)
 	_apply_voice_preset()
 	Settings.tts_changed.connect(_on_tts_changed)
@@ -81,6 +82,7 @@ func advance() -> void:
 		_show_next()
 	else:
 		queue_finished.emit()
+		_hide_if_idle()
 
 
 func is_revealing() -> bool:
@@ -114,9 +116,16 @@ func _display(text: String, speaker: String) -> void:
 func _show_next() -> void:
 	if _queue.is_empty():
 		queue_finished.emit()
+		_hide_if_idle()
 		return
 	var line: Dictionary = _queue.pop_front()
 	_display(line.get("text", ""), line.get("speaker", ""))
+
+
+# Hides the dialogue box once there is nothing left to display.
+func _hide_if_idle() -> void:
+	if _queue.is_empty() and not _revealing:
+		hide()
 
 
 func _complete_reveal() -> void:

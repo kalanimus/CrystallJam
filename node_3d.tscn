@@ -208,3 +208,7 @@ visible = false
 is_overlay = true
 
 [connection signal="my_custom_signal" from="InteractiveCube" to="Interface/Control/DialogueTest" method="_on_interactive_cube_my_custom_signal"]
+[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="lock_movement"]
+[connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="unlock_movement"]
+[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_started"]
+[connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_finished"]

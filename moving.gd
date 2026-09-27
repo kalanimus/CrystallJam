@@ -3,6 +3,8 @@ extends CharacterBody3D
 @export var speed: float = 5.0
 @export var mouse_sensitivity: float = 0.002
 
+var _movement_locked: bool = false
+
 @onready var head: Node3D = $Head
 @onready var interaction_ray: RayCast3D = $Head/Camera3D/RayCast3D
 
@@ -24,10 +26,19 @@ func _unhandled_input(event):
 			deg_to_rad(-89),
 			deg_to_rad(89)
 		)
-	if event.is_action_pressed("interact"):
+	if event.is_action_pressed("interact") and not _movement_locked:
 		try_interact()
 	if event.is_action_pressed("ui_cancel"):
 		_open_pause_menu()
+
+
+# Disables player control while a dialogue (or other blocking UI) is active.
+func lock_movement() -> void:
+	_movement_locked = true
+
+
+func unlock_movement() -> void:
+	_movement_locked = false
 
 
 func _open_pause_menu() -> void:
@@ -48,18 +59,23 @@ func try_interact():
 
 
 func _physics_process(delta):
-	var input_dir = Input.get_vector(
-		"move_left",
-		"move_right",
-		"move_forward",
-		"move_backward"
-	)
+	var input_dir := Vector2.ZERO
+	if not _movement_locked:
+		input_dir = Input.get_vector(
+			"move_left",
+			"move_right",
+			"move_forward",
+			"move_backward"
+		)
 
 	var direction = (
 		transform.basis * Vector3(input_dir.x, 0, input_dir.y)
 	).normalized()
 
-	if direction:
+	if _movement_locked:
+		velocity.x = 0.0
+		velocity.z = 0.0
+	elif direction:
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
 	else:
