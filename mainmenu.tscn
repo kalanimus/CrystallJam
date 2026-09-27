@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://0i3yfgc4j2hb"]
 
 [ext_resource type="Script" uid="uid://bg7y3k4gdf0hk" path="res://scripts/ui/mainmenu.gd" id="1_menu"]
+[ext_resource type="Texture2D" uid="uid://i7c102bgmwo7" path="res://image_2026-09-27_22-54-18.png" id="2_d2nv2"]
 
 [node name="MainMenu" type="Control" unique_id=687930704]
 layout_mode = 3
@@ -18,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.09, 0.1, 0.13, 1)
+color = Color(0.09019608, 0.09019608, 0.09019608, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=364537476]
 layout_mode = 1
@@ -33,11 +34,10 @@ layout_mode = 2
 theme_override_constants/separation = 12
 alignment = 1
 
-[node name="Title" type="Label" parent="CenterContainer/Menu" unique_id=1944867538]
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/Menu" unique_id=258634998]
 layout_mode = 2
-theme_override_font_sizes/font_size = 42
-text = "Escape From Yourself"
-horizontal_alignment = 1
+texture = ExtResource("2_d2nv2")
+expand_mode = 5
 
 [node name="Spacer" type="Control" parent="CenterContainer/Menu" unique_id=814606505]
 custom_minimum_size = Vector2(0, 28)
