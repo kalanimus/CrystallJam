@@ -1,7 +1,10 @@
 extends StaticBody3D
 
+const TEXT_RESOURCE_PATH := "res://time_paradoxes_10_hours.tres"
+
 @export var prompt := "Listen"
 @export var speaker := "Uncle"
+@export var text_resource: Resource
 @export_file("*.txt") var text_file := "res://time_paradoxes_10_hours.txt"
 
 var _paragraphs: Array[String] = []
@@ -16,6 +19,28 @@ func _ready() -> void:
 
 func _load_paragraphs() -> void:
 	_paragraphs.clear()
+	if _load_from_resource():
+		return
+	_load_from_file()
+
+
+func _load_from_resource() -> bool:
+	var resource := text_resource
+	if resource == null and ResourceLoader.exists(TEXT_RESOURCE_PATH):
+		resource = load(TEXT_RESOURCE_PATH)
+	if resource == null:
+		return false
+	var stored = resource.get("paragraphs")
+	if stored == null:
+		return false
+	for paragraph in stored:
+		var text := str(paragraph).strip_edges()
+		if not text.is_empty():
+			_paragraphs.append(text)
+	return not _paragraphs.is_empty()
+
+
+func _load_from_file() -> void:
 	if not FileAccess.file_exists(text_file):
 		push_warning("Dialogue text file not found: %s" % text_file)
 		return

@@ -30,13 +30,15 @@ var _current_player
 var _interrupt: bool = false
 var _queue: Array[String] = []
 var _sample: AudioStreamWAV
-var _synth: GDSAMSynth = GDSAMSynth.new()
+var _synth
 
 
 func _ready() -> void:
 	_sample = AudioStreamWAV.new()
 	_sample.mix_rate = 22050
 	_sample.format = AudioStreamWAV.FORMAT_8_BITS
+	if ClassDB.class_exists("GDSAMSynth"):
+		_synth = ClassDB.instantiate("GDSAMSynth")
 
 
 # Generates synthesized speech from the provided input and plays it with the specified audio player.
@@ -169,6 +171,8 @@ func _create_phrases(input: String) -> void:
 
 
 func _configure_sam() -> void:
+	if _synth == null:
+		return
 	_synth.set_speed(speed)
 	_synth.set_pitch(pitch)
 	_synth.set_mouth(mouth)
@@ -187,6 +191,11 @@ func _process_queue() -> void:
 		phrase = _queue.pop_front()
 		if phrase.strip_edges().is_empty():
 			continue
+		if _synth == null:
+			_queue.clear()
+			synthesis_failed.emit(phrase, "GDSAM extension not available on this platform")
+			finished_speaking.emit()
+			return
 		buffer = _synth.speak(phrase)
 		var message = _synth.get_last_error()
 		if not message.is_empty():

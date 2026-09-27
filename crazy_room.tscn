@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://b2b501lo4h6ok" path="res://scripts/interactions/movable_timer.gd" id="5_timer"]
 [ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="6_1j3yi"]
 [ext_resource type="Script" uid="uid://dwov7qmqrjjh1" path="res://scripts/system/mesh_collision.gd" id="7_collision"]
-[ext_resource type="Script" path="res://scripts/ui/ending_screen.gd" id="8_ending"]
+[ext_resource type="Script" uid="uid://cxs0bysd8qs5q" path="res://scripts/ui/ending_screen.gd" id="8_ending"]
 
 [sub_resource type="Environment" id="Environment_5dla7"]
 background_mode = 1
@@ -145,7 +145,7 @@ metadata/_edit_use_anchors_ = true
 visible = false
 is_overlay = true
 
-[node name="EndingScreen" type="Control" parent="CharacterBody3D/Interface"]
+[node name="EndingScreen" type="Control" parent="CharacterBody3D/Interface" unique_id=210278010]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -156,7 +156,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("8_ending")
 
-[node name="Backdrop" type="ColorRect" parent="CharacterBody3D/Interface/EndingScreen"]
+[node name="Backdrop" type="ColorRect" parent="CharacterBody3D/Interface/EndingScreen" unique_id=1501946064]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -165,7 +165,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Thanks" type="Label" parent="CharacterBody3D/Interface/EndingScreen"]
+[node name="Thanks" type="Label" parent="CharacterBody3D/Interface/EndingScreen" unique_id=123904823]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -177,7 +177,7 @@ text = "thanks for your time"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="QuitButton" type="Button" parent="CharacterBody3D/Interface/EndingScreen"]
+[node name="QuitButton" type="Button" parent="CharacterBody3D/Interface/EndingScreen" unique_id=450551433]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -193,7 +193,7 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 24
 text = "Quit"
 
-[node name="RestartButton" type="Button" parent="CharacterBody3D/Interface/EndingScreen"]
+[node name="RestartButton" type="Button" parent="CharacterBody3D/Interface/EndingScreen" unique_id=1713183515]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
