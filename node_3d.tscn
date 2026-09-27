@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://dfcnsvjt7xjms" path="res://scripts/interactions/movable.gd" id="5_movable"]
 [ext_resource type="Script" uid="uid://gxm6gtuexg4l" path="res://scripts/interactions/dialogue_interactable.gd" id="6_dialogue"]
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="7_menu"]
+[ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="8_room"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -18,7 +19,7 @@ size = Vector3(10, 1, 10)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqqax"]
 radius = 0.25
-height = 0.5
+height = 1.7033691
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_wcb3r"]
 radius = 0.25
@@ -84,11 +85,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008743048, -0.0063841343, -
 mesh = SubResource("BoxMesh_dqqax")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1181344834]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7538943, 1.5048786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7651979, 1.9538476, 0.1581428)
 script = ExtResource("1_a202f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=390289250]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.003984213, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.59770036, 0)
 shape = SubResource("CapsuleShape3D_dqqax")
 debug_color = Color(0.1764706, 0.5176471, 1, 1)
 
@@ -101,11 +102,6 @@ mesh = SubResource("CapsuleMesh_wcb3r")
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Head/Camera3D" unique_id=628605354]
 target_position = Vector3(0, 0, -3)
-
-[node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=1516191716]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92098165, 2.2294493, 2.2034116)
-light_energy = 4.864
-area_size = Vector2(1, 1.1419287)
 
 [node name="InteractiveSphere" type="RigidBody3D" parent="." unique_id=1716619464]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 0.83, -1.8)
@@ -136,6 +132,7 @@ script = ExtResource("6_dialogue")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveCube" unique_id=506466974]
 material_override = SubResource("Material_cube")
+transparency = 1.0
 mesh = SubResource("BoxMesh_interactive")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractiveCube" unique_id=231197853]
@@ -201,6 +198,18 @@ script = ExtResource("3_inventory")
 [node name="PauseMenu" parent="Interface" unique_id=1740325591 instance=ExtResource("7_menu")]
 visible = false
 is_overlay = true
+
+[node name="ROOM 1987 | The familiar room" parent="." unique_id=176349704 instance=ExtResource("8_room")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.84416056, 0.42219555, 1.2037559)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=272714595]
+transform = Transform3D(1, 0, 0, 0, -0.02308442, 0.9997335, 0, -0.9997335, -0.02308442, -0.9375671, 2.99836, 1.071728)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=291804066]
+transform = Transform3D(1, 0, 0, 0, 0.006830331, 0.9999768, 0, -0.9999768, 0.006830331, 1.9392004, 2.3992965, 3.0396416)
+
+[node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=588944958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.567214, -0.785388)
 
 [connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="unlock_movement"]
 [connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_finished"]

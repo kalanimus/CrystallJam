@@ -1,0 +1,1886 @@
+[gd_scene format=3 uid="uid://cc8d61au4egln"]
+
+[ext_resource type="PackedScene" uid="uid://cwpr5ycsi3w0g" path="res://assets/room.glb" id="1_enrvt"]
+
+[node name="ROOM 1987 | The familiar room" unique_id=1500122468 instance=ExtResource("1_enrvt")]
+
+[node name="Back skirting" parent="Permanent shell" parent_id_path=PackedInt32Array(1515942134) index="1" unique_id=1337463510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.100000024, -2.75)
+
+[node name="Floor foundation" parent="Permanent shell" parent_id_path=PackedInt32Array(1515942134) index="11" unique_id=1351819116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.100000024, 0)
+
+[node name="Side skirting" parent="Permanent shell" parent_id_path=PackedInt32Array(1515942134) index="16" unique_id=202603874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.16, 0.100000024, 0)
+
+[node name="Side skirting_001" parent="Permanent shell" parent_id_path=PackedInt32Array(1515942134) index="17" unique_id=1683968964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16, 0.100000024, 0)
+
+[node name="Back cornice_001" parent="Permanent shell_001" parent_id_path=PackedInt32Array(1517714597) index="0" unique_id=2024622834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2643113e-09, 3.01, -2.74)
+
+[node name="Back skirting_001" parent="Permanent shell_001" parent_id_path=PackedInt32Array(1517714597) index="1" unique_id=1273034455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9940671e-09, 0.100000024, -2.75)
+
+[node name="Radiator rib_002" parent="Radiator" parent_id_path=PackedInt32Array(1259388035) index="5" unique_id=2122527999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0.42000002)
+
+[node name="Door casing" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="0" unique_id=1681818163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5300001, 1.15, 0.01999998)
+
+[node name="Door casing lintel" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="1" unique_id=550584947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 2.31, 0.01999998)
+
+[node name="Door casing_001" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="2" unique_id=1783762436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52999985, 1.15, 0.01999998)
+
+[node name="Door handle" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="3" unique_id=1800655305]
+transform = Transform3D(1.1920929e-07, -1, -1.1920929e-07, 0, 1.1920929e-07, -1, 1, 1.1920929e-07, 0, 0.27499998, 1.11, 0.099999905)
+
+[node name="Door slab" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="4" unique_id=1209891898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 1.12, 0)
+
+[node name="Handle plate" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="5" unique_id=1914512439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35000002, 1.06, 0.06500006)
+
+[node name="Inset panel" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="6" unique_id=1512596209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.51, 0.048000097)
+
+[node name="Inset panel_001" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="7" unique_id=1381991359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 1.49, 0.048000097)
+
+[node name="Raised panel" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="8" unique_id=1832369773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.51, 0.062999964)
+
+[node name="Raised panel_001" parent="Interior panel door" parent_id_path=PackedInt32Array(1358505377) index="9" unique_id=327508825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 1.49, 0.062999964)
+
+[node name="Bed frame" parent="BED · walnut single" parent_id_path=PackedInt32Array(2016364037) index="0" unique_id=1473979504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40999997, 0)
+
+[node name="Pillow piping" parent="Pillow" parent_id_path=PackedInt32Array(1862906084) index="1" unique_id=1309426000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46999955, 0, -1.1920929e-07)
+
+[node name="Pillow piping_001" parent="Pillow" parent_id_path=PackedInt32Array(1862906084) index="2" unique_id=468178220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47000003, 0, 0)
+
+[node name="Brass pull" parent="Bedside cabinet" parent_id_path=PackedInt32Array(2140594464) index="0" unique_id=1554816128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26999998, 0.29999995)
+
+[node name="Drawer front" parent="Bedside cabinet" parent_id_path=PackedInt32Array(2140594464) index="3" unique_id=568902393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26999998, 0.26900005)
+
+[node name="Base" parent="Bedside lamp" parent_id_path=PackedInt32Array(1156763745) index="0" unique_id=689082937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.024999976, 0)
+
+[node name="Pleated shade" parent="Bedside lamp" parent_id_path=PackedInt32Array(1156763745) index="1" unique_id=1200666120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.41000003, 0)
+
+[node name="Shade lower band" parent="Bedside lamp" parent_id_path=PackedInt32Array(1156763745) index="2" unique_id=1232739226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.27000004, 0)
+
+[node name="Stem" parent="Bedside lamp" parent_id_path=PackedInt32Array(1156763745) index="3" unique_id=1157404709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.20999998, 0)
+
+[node name="Spine" parent="Bedside book" parent_id_path=PackedInt32Array(414718828) index="3" unique_id=2108762859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1049999, 0.018999994, 0)
+
+[node name="Bell" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="0" unique_id=1128319304]
+transform = Transform3D(0.039, 0, 0, 0, 0.023000002, 0, 0, 0, 0.03, -0.05499983, 0.09100002, 0)
+
+[node name="Bell_001" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="1" unique_id=630762725]
+transform = Transform3D(0.039, 0, 0, 0, 0.023000002, 0, 0, 0, 0.03, 0.055000067, 0.09100002, 0)
+
+[node name="Clock foot" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="3" unique_id=839073160]
+transform = Transform3D(-3.552714e-15, -0.33763227, 0.9412781, 1.3411045e-07, -0.94127816, -0.33763227, 1.0000001, 1.3411045e-07, 0, -0.04674983, -0.07800001, 0)
+
+[node name="Clock foot_001" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="4" unique_id=1331400151]
+transform = Transform3D(-3.552714e-15, 0.33763227, -0.9412781, -1.3411045e-07, -0.94127816, -0.33763227, -1.0000001, 1.3411045e-07, 0, 0.04675007, -0.07800001, 0)
+
+[node name="Hour marker_002" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="9" unique_id=834062393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05196166, 0.029999971, 0.032999992)
+
+[node name="Hour marker_004" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="11" unique_id=615677216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05196166, -0.029999971, 0.032999992)
+
+[node name="Hour marker_008" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="15" unique_id=2025603020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.051961422, -0.029999971, 0.032999992)
+
+[node name="Hour marker_010" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="17" unique_id=960634328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.051961422, 0.029999971, 0.032999992)
+
+[node name="Minute hand" parent="Twin bell alarm clock" parent_id_path=PackedInt32Array(1143331562) index="19" unique_id=1313532519]
+transform = Transform3D(-2.3841858e-07, 0.21903835, 0.97571623, -8.940695e-08, 0.97571623, -0.21903834, -1, -1.2665987e-07, -1.1920929e-07, 0.005500078, 0.024500012, 0.03999996)
+
+[node name="Cloth toe" parent="Slipper 1" parent_id_path=PackedInt32Array(1745753216) index="0" unique_id=1822475165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, 0.045000028, -0.05700001)
+
+[node name="Sole" parent="Slipper 1" parent_id_path=PackedInt32Array(1745753216) index="1" unique_id=1427014082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.8428774e-08, 0)
+
+[node name="Cloth toe_001" parent="Slipper 2" parent_id_path=PackedInt32Array(381460118) index="0" unique_id=1472678279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, 0.045000028, -0.056999862)
+
+[node name="Sole_001" parent="Slipper 2" parent_id_path=PackedInt32Array(381460118) index="1" unique_id=872757978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.8428774e-08, 0)
+
+[node name="Leather strap" parent="Suitcase under bed" parent_id_path=PackedInt32Array(1392634444) index="0" unique_id=1989487448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27999997, -1.4901161e-08, 0.26600003)
+
+[node name="Leather strap_001" parent="Suitcase under bed" parent_id_path=PackedInt32Array(1392634444) index="1" unique_id=1270816417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27999985, -1.4901161e-08, 0.26600003)
+
+[node name="Leather suitcase" parent="Suitcase under bed" parent_id_path=PackedInt32Array(1392634444) index="2" unique_id=85665879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4901161e-08, 0)
+
+[node name="Suitcase handle" parent="Suitcase under bed" parent_id_path=PackedInt32Array(1392634444) index="3" unique_id=1567303697]
+transform = Transform3D(1.1920929e-07, 1, 1.1920929e-07, 0, 1.1920929e-07, -1, -1, 1.1920929e-07, 0, 0, -1.4901161e-08, 0.32000002)
+
+[node name="Horizontal shelf" parent="Wall unit structure" parent_id_path=PackedInt32Array(620065229) index="13" unique_id=2053701052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.100000024, 0)
+
+[node name="Vertical cabinet side" parent="Wall unit structure" parent_id_path=PackedInt32Array(620065229) index="30" unique_id=138030308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6299999, 1.23, 0)
+
+[node name="Hardback board" parent="Book 01-01" parent_id_path=PackedInt32Array(1865890672) index="3" unique_id=1919175214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.041270256, 0.17503667, 0)
+
+[node name="Hardback board_001" parent="Book 01-01" parent_id_path=PackedInt32Array(1865890672) index="4" unique_id=1052211430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.041270256, 0.17503667, 0)
+
+[node name="Gold spine rule_003" parent="Book 01-02" parent_id_path=PackedInt32Array(794175756) index="0" unique_id=907554164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.043266237, 0.1329999)
+
+[node name="Gold spine rule_004" parent="Book 01-02" parent_id_path=PackedInt32Array(794175756) index="1" unique_id=874981532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.06323528, 0.1329999)
+
+[node name="Gold spine rule_005" parent="Book 01-02" parent_id_path=PackedInt32Array(794175756) index="2" unique_id=1137459167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.25959736, 0.1329999)
+
+[node name="Paper block_001" parent="Book 01-02" parent_id_path=PackedInt32Array(794175756) index="5" unique_id=2111232415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.16640854, 0)
+
+[node name="Spine title_001" parent="Book 01-02" parent_id_path=PackedInt32Array(794175756) index="6" unique_id=1142656445]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.20301843, 0.1329999)
+
+[node name="Spine_002" parent="Book 01-02" parent_id_path=PackedInt32Array(794175756) index="7" unique_id=597936907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.16640854, 0.125)
+
+[node name="Gold spine rule_012" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="0" unique_id=23394013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.03782791, 0.1329999)
+
+[node name="Gold spine rule_013" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="1" unique_id=2095191468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.055286944, 0.1329999)
+
+[node name="Gold spine rule_014" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="2" unique_id=661325088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.22696751, 0.1329999)
+
+[node name="Hardback board_008" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="3" unique_id=1845659704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03919676, 0.14549202, 0)
+
+[node name="Hardback board_009" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="4" unique_id=1351647494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0391967, 0.14549202, 0)
+
+[node name="Paper block_004" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="5" unique_id=1034497988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.14549202, 0)
+
+[node name="Spine title_004" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="6" unique_id=829732620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.17750025, 0.1329999)
+
+[node name="Spine_005" parent="Book 01-05" parent_id_path=PackedInt32Array(481947874) index="7" unique_id=360262062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.14549202, 0.125)
+
+[node name="Gold spine rule_015" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="0" unique_id=1666149772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.034616888, 0.1329999)
+
+[node name="Gold spine rule_016" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="1" unique_id=2070987489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.050593853, 0.1329999)
+
+[node name="Gold spine rule_017" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="2" unique_id=1979321289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.2077012, 0.1329999)
+
+[node name="Hardback board_011" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="4" unique_id=986141277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.036209032, 0.13314176, 0)
+
+[node name="Paper block_005" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="5" unique_id=189717315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.13314176, 0)
+
+[node name="Spine title_005" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="6" unique_id=1240041743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.16243297, 0.1329999)
+
+[node name="Spine_006" parent="Book 01-06" parent_id_path=PackedInt32Array(232210299) index="7" unique_id=2090847125]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.13314176, 0.125)
+
+[node name="Gold spine rule_018" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="0" unique_id=896356770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0.045805395, 0.1329999)
+
+[node name="Gold spine rule_019" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="1" unique_id=1257755324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0.06694633, 0.1329999)
+
+[node name="Gold spine rule_020" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="2" unique_id=429002483]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0.2748323, 0.1329999)
+
+[node name="Hardback board_012" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="3" unique_id=984232605]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.043360505, 0.17617452, 0)
+
+[node name="Hardback board_013" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="4" unique_id=2023821185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.043360528, 0.17617452, 0)
+
+[node name="Paper block_006" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="5" unique_id=1513891431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0.17617452, 0)
+
+[node name="Spine title_006" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="6" unique_id=634760575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0.21493292, 0.1329999)
+
+[node name="Spine_007" parent="Book 01-07" parent_id_path=PackedInt32Array(1760944612) index="7" unique_id=593822133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0.17617452, 0.125)
+
+[node name="Gold spine rule_021" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="0" unique_id=553790581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1175871e-08, 0.0387156, 0.1329999)
+
+[node name="Gold spine rule_022" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="1" unique_id=825336092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1175871e-08, 0.0565843, 0.1329999)
+
+[node name="Gold spine rule_023" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="2" unique_id=1263763655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1175871e-08, 0.23229349, 0.1329999)
+
+[node name="Hardback board_014" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="3" unique_id=1191926502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.038465787, 0.14890611, 0)
+
+[node name="Paper block_007" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="5" unique_id=349903366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1175871e-08, 0.14890611, 0)
+
+[node name="Spine title_007" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="6" unique_id=785369716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1175871e-08, 0.18166542, 0.1329999)
+
+[node name="Spine_008" parent="Book 01-08" parent_id_path=PackedInt32Array(1006620436) index="7" unique_id=1196617062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1175871e-08, 0.14890611, 0.125)
+
+[node name="Gold spine rule_024" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="0" unique_id=1312274877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.035209477, 0.1329999)
+
+[node name="Gold spine rule_025" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="1" unique_id=1513348246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.051460028, 0.1329999)
+
+[node name="Gold spine rule_026" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="2" unique_id=244818165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.21125686, 0.1329999)
+
+[node name="Hardback board_016" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="3" unique_id=1572705755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.041479483, 0.13542104, 0)
+
+[node name="Paper block_008" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="5" unique_id=1139356530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.13542104, 0)
+
+[node name="Spine title_008" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="6" unique_id=283209181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.1652137, 0.1329999)
+
+[node name="Spine_009" parent="Book 01-09" parent_id_path=PackedInt32Array(1272711675) index="7" unique_id=1432152943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.13542104, 0.125)
+
+[node name="Hardback board_018" parent="Book 02-01" parent_id_path=PackedInt32Array(234591993) index="3" unique_id=300072645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036930084, 0.13496614, 0)
+
+[node name="Gold spine rule_054" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="0" unique_id=86549659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.041231632, 0.1329999)
+
+[node name="Gold spine rule_055" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="1" unique_id=1562654837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.060261607, 0.1329999)
+
+[node name="Gold spine rule_056" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="2" unique_id=1696047155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.24738955, 0.1329999)
+
+[node name="Hardback board_036" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="3" unique_id=1168577377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.042536348, 0.15858305, 0)
+
+[node name="Paper block_018" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="5" unique_id=2011631203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.15858305, 0)
+
+[node name="Spine title_018" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="6" unique_id=1741541698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.19347131, 0.1329999)
+
+[node name="Spine_019" parent="Book 03-02" parent_id_path=PackedInt32Array(183477744) index="7" unique_id=1566719517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.15858305, 0.125)
+
+[node name="Gold spine rule_057" parent="Book 03-03" parent_id_path=PackedInt32Array(818169403) index="0" unique_id=19822009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.03816986, 0.1329999)
+
+[node name="Gold spine rule_058" parent="Book 03-03" parent_id_path=PackedInt32Array(818169403) index="1" unique_id=598068656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.05578673, 0.1329999)
+
+[node name="Gold spine rule_059" parent="Book 03-03" parent_id_path=PackedInt32Array(818169403) index="2" unique_id=1628772352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.22901928, 0.1329999)
+
+[node name="Paper block_019" parent="Book 03-03" parent_id_path=PackedInt32Array(818169403) index="5" unique_id=206898297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.1468072, 0)
+
+[node name="Spine title_019" parent="Book 03-03" parent_id_path=PackedInt32Array(818169403) index="6" unique_id=905959772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.1791048, 0.1329999)
+
+[node name="Spine_020" parent="Book 03-03" parent_id_path=PackedInt32Array(818169403) index="7" unique_id=553789235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.1468072, 0.125)
+
+[node name="Gold spine rule_060" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="0" unique_id=366240936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.047531843, 0.1329999)
+
+[node name="Gold spine rule_061" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="1" unique_id=1292076289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.06946969, 0.1329999)
+
+[node name="Gold spine rule_062" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="2" unique_id=1724089847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.28519142, 0.1329999)
+
+[node name="Hardback board_040" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="3" unique_id=1162303202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.037457734, 0.18281496, 0)
+
+[node name="Hardback board_041" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="4" unique_id=388026421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037457675, 0.18281496, 0)
+
+[node name="Paper block_020" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="5" unique_id=126265867]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.18281496, 0)
+
+[node name="Spine title_020" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="6" unique_id=1814930339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.22303426, 0.1329999)
+
+[node name="Spine_021" parent="Book 03-04" parent_id_path=PackedInt32Array(1945748198) index="7" unique_id=515703223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.18281496, 0.125)
+
+[node name="Gold spine rule_063" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="0" unique_id=283272351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.044492245, 0.1329999)
+
+[node name="Gold spine rule_064" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="1" unique_id=1568327116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.06502724, 0.1329999)
+
+[node name="Gold spine rule_065" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="2" unique_id=893800784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.2669537, 0.1329999)
+
+[node name="Hardback board_043" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="4" unique_id=1757342539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034797937, 0.1711241, 0)
+
+[node name="Paper block_021" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="5" unique_id=323163879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.1711241, 0)
+
+[node name="Spine title_021" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="6" unique_id=1572246279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.20877147, 0.1329999)
+
+[node name="Spine_022" parent="Book 03-05" parent_id_path=PackedInt32Array(1528521527) index="7" unique_id=1791867313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.1711241, 0.125)
+
+[node name="Gold spine rule_066" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="0" unique_id=1983657356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.037256956, 0.1329999)
+
+[node name="Gold spine rule_067" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="1" unique_id=324823353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.05445254, 0.1329999)
+
+[node name="Gold spine rule_068" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="2" unique_id=354011654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.22354198, 0.1329999)
+
+[node name="Hardback board_044" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="3" unique_id=346525843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.044717297, 0.14329612, 0)
+
+[node name="Hardback board_045" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="4" unique_id=127923176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.044717267, 0.14329612, 0)
+
+[node name="Paper block_022" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="5" unique_id=490203950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.14329612, 0)
+
+[node name="Spine title_022" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="6" unique_id=1559403759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.17482126, 0.1329999)
+
+[node name="Spine_023" parent="Book 03-06" parent_id_path=PackedInt32Array(1395923373) index="7" unique_id=597273663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.14329612, 0.125)
+
+[node name="Gold spine rule_069" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="0" unique_id=1638992627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.035208464, 0.1329999)
+
+[node name="Gold spine rule_070" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="1" unique_id=1150044150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.051458478, 0.1329999)
+
+[node name="Gold spine rule_071" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="2" unique_id=1894842265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.21125066, 0.1329999)
+
+[node name="Hardback board_046" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="3" unique_id=1723805818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034504324, 0.1354171, 0)
+
+[node name="Hardback board_047" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="4" unique_id=1005704409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034504384, 0.1354171, 0)
+
+[node name="Paper block_023" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="5" unique_id=1951222609]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.1354171, 0)
+
+[node name="Spine title_023" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="6" unique_id=1061258078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.16520882, 0.1329999)
+
+[node name="Spine_024" parent="Book 03-07" parent_id_path=PackedInt32Array(245185967) index="7" unique_id=1642850120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.1354171, 0.125)
+
+[node name="Gold spine rule_072" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="0" unique_id=1273813169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.04617989, 0.1329999)
+
+[node name="Gold spine rule_073" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="1" unique_id=108376282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.06749368, 0.1329999)
+
+[node name="Gold spine rule_074" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="2" unique_id=188700119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.2770791, 0.1329999)
+
+[node name="Hardback board_048" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="3" unique_id=1741983982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039902516, 0.17761481, 0)
+
+[node name="Paper block_024" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="5" unique_id=89099007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.17761481, 0)
+
+[node name="Spine title_024" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="6" unique_id=905070639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.21669006, 0.1329999)
+
+[node name="Spine_025" parent="Book 03-08" parent_id_path=PackedInt32Array(2033535495) index="7" unique_id=117958579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.17761481, 0.125)
+
+[node name="Hardback board_050" parent="Book 04-01" parent_id_path=PackedInt32Array(1113709468) index="3" unique_id=332143247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028775215, 0.17134786, 0)
+
+[node name="Hardback board_051" parent="Book 04-01" parent_id_path=PackedInt32Array(1113709468) index="4" unique_id=1023983166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028775215, 0.17134786, 0)
+
+[node name="Hardback board_052" parent="Book 04-02" parent_id_path=PackedInt32Array(1093193415) index="3" unique_id=926200846]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.038388014, 0.1843214, 0)
+
+[node name="Hardback board_056" parent="Book 04-04" parent_id_path=PackedInt32Array(1677471840) index="3" unique_id=1820555028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.030623913, 0.15925837, 0)
+
+[node name="Hardback board_057" parent="Book 04-04" parent_id_path=PackedInt32Array(1677471840) index="4" unique_id=1866694055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030623913, 0.15925837, 0)
+
+[node name="Gold spine rule_087" parent="Book 04-05" parent_id_path=PackedInt32Array(1711460168) index="0" unique_id=1922554796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.034618855, 0.1329999)
+
+[node name="Gold spine rule_088" parent="Book 04-05" parent_id_path=PackedInt32Array(1711460168) index="1" unique_id=99459954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.050596952, 0.1329999)
+
+[node name="Gold spine rule_089" parent="Book 04-05" parent_id_path=PackedInt32Array(1711460168) index="2" unique_id=666600159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.2077136, 0.1329999)
+
+[node name="Paper block_029" parent="Book 04-05" parent_id_path=PackedInt32Array(1711460168) index="5" unique_id=1518628496]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.13314986, 0)
+
+[node name="Spine title_029" parent="Book 04-05" parent_id_path=PackedInt32Array(1711460168) index="6" unique_id=1217362091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.16244268, 0.1329999)
+
+[node name="Spine_030" parent="Book 04-05" parent_id_path=PackedInt32Array(1711460168) index="7" unique_id=644172874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.13314986, 0.125)
+
+[node name="Gold spine rule_090" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="0" unique_id=363649610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.043045044, 0.1329999)
+
+[node name="Gold spine rule_091" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="1" unique_id=967400723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.06291175, 0.1329999)
+
+[node name="Gold spine rule_092" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="2" unique_id=861259293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.2582698, 0.1329999)
+
+[node name="Hardback board_060" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="3" unique_id=1666851881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.038170382, 0.16555738, 0)
+
+[node name="Hardback board_061" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="4" unique_id=1498632096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.038170353, 0.16555738, 0)
+
+[node name="Paper block_030" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="5" unique_id=1786302896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.16555738, 0)
+
+[node name="Spine title_030" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="6" unique_id=180501720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.20198011, 0.1329999)
+
+[node name="Spine_031" parent="Book 04-06" parent_id_path=PackedInt32Array(125634750) index="7" unique_id=1540171232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4901161e-08, 0.16555738, 0.125)
+
+[node name="Gold spine rule_093" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="0" unique_id=1142759622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.040447474, 0.1329999)
+
+[node name="Gold spine rule_094" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="1" unique_id=307649628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.05911565, 0.1329999)
+
+[node name="Gold spine rule_095" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="2" unique_id=2120458831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.24268556, 0.1329999)
+
+[node name="Hardback board_062" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="3" unique_id=1628211466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036094986, 0.15556765, 0)
+
+[node name="Hardback board_063" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="4" unique_id=1034157191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03609494, 0.15556765, 0)
+
+[node name="Paper block_031" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="5" unique_id=2129331385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.15556765, 0)
+
+[node name="Spine title_031" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="6" unique_id=539168351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.1897924, 0.1329999)
+
+[node name="Spine_032" parent="Book 04-07" parent_id_path=PackedInt32Array(1868416494) index="7" unique_id=1566910933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.15556765, 0.125)
+
+[node name="Gold spine rule_096" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="0" unique_id=1229941179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4237822e-09, 0.04445386, 0.1329999)
+
+[node name="Gold spine rule_097" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="1" unique_id=33262828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4237822e-09, 0.06497097, 0.1329999)
+
+[node name="Gold spine rule_098" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="2" unique_id=383511653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4237822e-09, 0.26672244, 0.1329999)
+
+[node name="Hardback board_064" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="3" unique_id=1288711057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039170865, 0.17097592, 0)
+
+[node name="Hardback board_065" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="4" unique_id=1259209745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.039170858, 0.17097592, 0)
+
+[node name="Paper block_032" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="5" unique_id=1166355410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4237822e-09, 0.17097592, 0)
+
+[node name="Spine title_032" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="6" unique_id=320544145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4237822e-09, 0.20859075, 0.1329999)
+
+[node name="Spine_033" parent="Book 04-08" parent_id_path=PackedInt32Array(1332704885) index="7" unique_id=2104380486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4237822e-09, 0.17097592, 0.125)
+
+[node name="Cover bottom_001" parent="Stacked novel 1" parent_id_path=PackedInt32Array(1516178830) index="0" unique_id=1558176673]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="Cover top_001" parent="Stacked novel 1" parent_id_path=PackedInt32Array(1516178830) index="1" unique_id=1938781924]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0.039000154, 0)
+
+[node name="Pages_001" parent="Stacked novel 1" parent_id_path=PackedInt32Array(1516178830) index="2" unique_id=1125430084]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0.018000126, 0)
+
+[node name="Spine_034" parent="Stacked novel 1" parent_id_path=PackedInt32Array(1516178830) index="3" unique_id=2052995726]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -0.1049999, 0.019000173, 0)
+
+[node name="Spine_035" parent="Stacked novel 2" parent_id_path=PackedInt32Array(2034858806) index="3" unique_id=321220980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10500002, 0.019000053, 0)
+
+[node name="Spine_037" parent="Stacked novel 4" parent_id_path=PackedInt32Array(759868310) index="3" unique_id=1288818529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10499996, 0.019000053, 2.3841858e-07)
+
+[node name="Cover bottom_005" parent="Stacked novel 5" parent_id_path=PackedInt32Array(1465388478) index="0" unique_id=937081907]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="Cover top_005" parent="Stacked novel 5" parent_id_path=PackedInt32Array(1465388478) index="1" unique_id=1737087625]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0.039000154, 0)
+
+[node name="Pages_005" parent="Stacked novel 5" parent_id_path=PackedInt32Array(1465388478) index="2" unique_id=1040428308]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0.018000126, 0)
+
+[node name="Spine_038" parent="Stacked novel 5" parent_id_path=PackedInt32Array(1465388478) index="3" unique_id=622467932]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -0.10500002, 0.019000173, -2.3841858e-07)
+
+[node name="Antenna left" parent="CRT television" parent_id_path=PackedInt32Array(748753861) index="0" unique_id=90968250]
+transform = Transform3D(2.9802322e-07, -0.56468403, -0.82530713, -1.4210855e-14, 0.8253072, -0.56468403, 1, 1.1920929e-07, 2.3841858e-07, -0.26999998, 0.97, 0)
+
+[node name="Antenna right" parent="CRT television" parent_id_path=PackedInt32Array(748753861) index="1" unique_id=485955887]
+transform = Transform3D(-1.192093e-07, 0.5774647, 0.8164157, -1.7881395e-07, 0.81641567, -0.5774647, -1.0000001, -1.7881393e-07, 0, 0.004999995, 0.985, 0)
+
+[node name="Glass" parent="Glass tumbler 1" parent_id_path=PackedInt32Array(784085550) index="0" unique_id=1162500542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.07000005, 0)
+
+[node name="Glass lip" parent="Glass tumbler 1" parent_id_path=PackedInt32Array(784085550) index="1" unique_id=1607985780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.14100003, 0)
+
+[node name="Cup" parent="Tea cup 1" parent_id_path=PackedInt32Array(84373766) index="0" unique_id=354479628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.059000015, 0)
+
+[node name="Dark tea surface" parent="Tea cup 1" parent_id_path=PackedInt32Array(84373766) index="1" unique_id=2060200634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.11899996, 0)
+
+[node name="Lip" parent="Tea cup 1" parent_id_path=PackedInt32Array(84373766) index="3" unique_id=1485795390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.120000005, 0)
+
+[node name="Stand" parent="Family portrait" parent_id_path=PackedInt32Array(1953713360) index="1" unique_id=1728620180]
+transform = Transform3D(-1, -1.1972276e-07, -3.4502207e-08, 1.1972277e-07, -0.84663653, -0.5321715, 3.4502207e-08, -0.5321715, 0.8466366, 0, 0.087500095, -0.06500006)
+
+[node name="Box lid" parent="Storage box 1" parent_id_path=PackedInt32Array(720820852) index="0" unique_id=1068340580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.31800008, 0)
+
+[node name="Cardboard box" parent="Storage box 1" parent_id_path=PackedInt32Array(720820852) index="1" unique_id=1078645285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.16000009, 0)
+
+[node name="Label" parent="Storage box 1" parent_id_path=PackedInt32Array(720820852) index="2" unique_id=1160379361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.16000009, 0.18300009)
+
+[node name="Box lid_001" parent="Storage box 2" parent_id_path=PackedInt32Array(1482204563) index="0" unique_id=1810279894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.31800008, 0)
+
+[node name="Cardboard box_001" parent="Storage box 2" parent_id_path=PackedInt32Array(1482204563) index="1" unique_id=1438999112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.16000009, 0)
+
+[node name="Label_001" parent="Storage box 2" parent_id_path=PackedInt32Array(1482204563) index="2" unique_id=1483288484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0.16000009, 0.18300009)
+
+[node name="Stem_001" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="10" unique_id=1419775011]
+transform = Transform3D(-2.3841858e-07, 0.5547002, 0.83205026, -5.960466e-08, 0.8320502, -0.5547002, -1, -1.7881392e-07, -1.192093e-07, 0.051100016, 0.2518499, 0)
+
+[node name="Stem_002" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="11" unique_id=1315710317]
+transform = Transform3D(-0.67546326, -0.34959835, -0.64925396, 4.7300546e-08, 0.880471, -0.4741, 0.7373939, -0.3202371, -0.59472585, -0.037680864, 0.27009988, -0.034516096)
+
+[node name="Stem_003" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="12" unique_id=2113369118]
+transform = Transform3D(0.99616456, 0.03601342, 0.07974399, 0, 0.91137046, -0.41158676, -0.08749898, 0.4100082, 0.907875, 0.004471302, 0.28834987, 0.050904036)
+
+[node name="Stem_004" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="13" unique_id=1609020047]
+transform = Transform3D(-0.7936678, 0.33745238, 0.5061789, -1.0983099e-07, 0.8320504, -0.5547001, -0.6083513, -0.44024765, -0.66037154, 0.031086683, 0.2518499, -0.04055643)
+
+[node name="Stem_005" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="14" unique_id=1231040322]
+transform = Transform3D(0.17432654, -0.4668404, -0.86698925, 0, 0.8804712, -0.47409987, 0.9846879, 0.082648166, 0.15348947, -0.050317526, 0.27009988, 0.008908033)
+
+[node name="Stem_006" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="15" unique_id=1318993946]
+transform = Transform3D(0.53657293, 0.34731913, 0.7690637, -4.5793442e-08, 0.9113706, -0.4115868, -0.84385395, 0.2208463, 0.48901674, 0.04312086, 0.28834987, 0.027418852)
+
+[node name="Stem_007" parent="Fern on wall unit" parent_id_path=PackedInt32Array(570378360) index="16" unique_id=1189962420]
+transform = Transform3D(-0.9656576, -0.14412075, -0.2161811, 5.851586e-10, 0.83205026, -0.5547002, 0.25981736, -0.5356505, -0.80347574, -0.013276577, 0.2518499, -0.049345016)
+
+[node name="Desk leg" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="0" unique_id=604837861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0.39999998, 0.23000002)
+
+[node name="Desk leg_001" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="1" unique_id=435286990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0.39999998, -0.23000002)
+
+[node name="Desk leg_002" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="2" unique_id=687488425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 0.39999998, 0.23000002)
+
+[node name="Desk leg_003" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="3" unique_id=184108257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 0.39999998, -0.23000002)
+
+[node name="Desktop" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="4" unique_id=774611808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0.06566191)
+
+[node name="Drawer front_002" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="5" unique_id=4023925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37, 0.66, 0.32599998)
+
+[node name="Drawer front_003" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="6" unique_id=515807049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37, 0.66, 0.32599998)
+
+[node name="Drawer pull" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="7" unique_id=915726925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37, 0.66, 0.3499999)
+
+[node name="Drawer rail" parent="Writing desk" parent_id_path=PackedInt32Array(2064011895) index="9" unique_id=315838404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0.099999905)
+
+[node name="Back upright" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="0" unique_id=1697171716]
+transform = Transform3D(1, -1.8626451e-09, -1.4901161e-08, 0, 0.9945054, -0.10468523, 0, 0.10468524, 0.99450547, -0.22000009, 0.735, 0.24999994)
+
+[node name="Back upright_001" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="1" unique_id=152292774]
+transform = Transform3D(1, -1.8626451e-09, -1.4901161e-08, 0, 0.9945054, -0.10468523, 0, 0.10468524, 0.99450547, 0.21999991, 0.735, 0.25000006)
+
+[node name="Chair leg" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="3" unique_id=1047218465]
+transform = Transform3D(-0.70710677, 0.051029302, 0.70526314, -6.255839e-08, 0.99739254, -0.07216639, -0.7071067, -0.051029403, -0.70526314, -0.20900011, 0.265, 0.20899999)
+
+[node name="Chair leg_001" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="4" unique_id=1630962486]
+transform = Transform3D(0.7071067, 0.05102949, 0.7052632, -5.8513532e-08, 0.9973926, -0.072166525, -0.7071068, 0.05102939, 0.70526296, -0.20900023, 0.265, -0.20899981)
+
+[node name="Chair leg_002" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="5" unique_id=344270204]
+transform = Transform3D(-0.7071068, -0.05102931, -0.70526326, 6.7055225e-08, 0.9973926, -0.0721664, 0.70710677, -0.0510294, -0.70526314, 0.20899999, 0.265, 0.20900011)
+
+[node name="Chair leg_003" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="6" unique_id=740831220]
+transform = Transform3D(0.7071067, -0.05102949, -0.70526314, 6.037618e-08, 0.9973926, -0.072166525, 0.70710677, 0.051029388, 0.705263, 0.20899999, 0.265, -0.20899993)
+
+[node name="Chair seat" parent="Desk chair" parent_id_path=PackedInt32Array(1924065113) index="7" unique_id=1534319805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48000002, 0)
+
+[node name="Carriage return lever" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="0" unique_id=147776146]
+transform = Transform3D(0.85749304, -0.51261467, -0.04395643, -2.9802326e-08, 0.085435875, -0.99634373, 0.51449573, 0.8543577, 0.07326068, -0.29000002, 0.26500005, -0.03999996)
+
+[node name="Ivory key" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="1" unique_id=605779596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17500001, 0.16800004, 0.15899992)
+
+[node name="Ivory key_001" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="2" unique_id=1274824610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13700002, 0.16800004, 0.15899992)
+
+[node name="Ivory key_002" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="3" unique_id=230296957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09900004, 0.16800004, 0.15899992)
+
+[node name="Ivory key_003" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="4" unique_id=1511218015]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06099999, 0.16800004, 0.15899992)
+
+[node name="Ivory key_004" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="5" unique_id=1308061162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023000002, 0.16800004, 0.15899992)
+
+[node name="Ivory key_005" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="6" unique_id=147353837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014999986, 0.16800004, 0.15899992)
+
+[node name="Ivory key_006" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="7" unique_id=377084602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052999973, 0.16800004, 0.15899992)
+
+[node name="Ivory key_007" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="8" unique_id=455482208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09100002, 0.16800004, 0.15899992)
+
+[node name="Ivory key_008" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="9" unique_id=631416995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12900001, 0.16800004, 0.15899992)
+
+[node name="Ivory key_009" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="10" unique_id=1359570884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167, 0.16800004, 0.15899992)
+
+[node name="Ivory key_010" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="11" unique_id=1700769123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16799998, 0.17699999, 0.11599994)
+
+[node name="Ivory key_011" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="12" unique_id=558727181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.17699999, 0.11599994)
+
+[node name="Ivory key_012" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="13" unique_id=475054353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09200001, 0.17699999, 0.11599994)
+
+[node name="Ivory key_013" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="14" unique_id=346874978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05400002, 0.17699999, 0.11599994)
+
+[node name="Ivory key_014" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="15" unique_id=745362980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016000032, 0.17699999, 0.11599994)
+
+[node name="Ivory key_015" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="16" unique_id=2066872663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022000015, 0.17699999, 0.11599994)
+
+[node name="Ivory key_016" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="17" unique_id=1090198109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.060000002, 0.17699999, 0.11599994)
+
+[node name="Ivory key_017" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="18" unique_id=719105115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09799999, 0.17699999, 0.11599994)
+
+[node name="Ivory key_018" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="19" unique_id=1790900958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13599998, 0.17699999, 0.11599994)
+
+[node name="Ivory key_019" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="20" unique_id=1248176833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17400002, 0.17699999, 0.11599994)
+
+[node name="Ivory key_020" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="21" unique_id=1830428933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17500001, 0.18600005, 0.072999954)
+
+[node name="Ivory key_021" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="22" unique_id=1859362525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13700002, 0.18600005, 0.072999954)
+
+[node name="Ivory key_022" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="23" unique_id=757055610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09899998, 0.18600005, 0.072999954)
+
+[node name="Ivory key_023" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="24" unique_id=1026059934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06099999, 0.18600005, 0.072999954)
+
+[node name="Ivory key_024" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="25" unique_id=111054018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023000002, 0.18600005, 0.072999954)
+
+[node name="Ivory key_025" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="26" unique_id=1412323974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014999986, 0.18600005, 0.072999954)
+
+[node name="Ivory key_026" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="27" unique_id=1827393042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052999973, 0.18600005, 0.072999954)
+
+[node name="Ivory key_027" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="28" unique_id=2015102218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09100002, 0.18600005, 0.072999954)
+
+[node name="Ivory key_028" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="29" unique_id=1109429169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12900001, 0.18600005, 0.072999954)
+
+[node name="Ivory key_029" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="30" unique_id=1997696642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167, 0.18600005, 0.072999954)
+
+[node name="Keyboard bevel" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="31" unique_id=1968306747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0.10500002)
+
+[node name="Platen" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="32" unique_id=200474852]
+transform = Transform3D(1.1920929e-07, 1, 1.1920929e-07, 0, 1.1920929e-07, -1, -1, 1.1920929e-07, 0, 0, 0.23999995, -0.089999914)
+
+[node name="Platen knob" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="33" unique_id=1583840772]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, -0.255, 0.23999995, -0.089999914)
+
+[node name="Platen knob_001" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="34" unique_id=892975209]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0.255, 0.23999995, -0.089999914)
+
+[node name="Sheet of paper" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="35" unique_id=916631389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33999997, -0.12199998)
+
+[node name="Space bar" parent="Typewriter" parent_id_path=PackedInt32Array(1240075075) index="36" unique_id=1876655640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16399997, 0.204)
+
+[node name="Bent arm" parent="Desk lamp" parent_id_path=PackedInt32Array(1443889807) index="0" unique_id=1230238571]
+transform = Transform3D(1.4901161e-07, -0.9119214, -0.41036475, -1.4901161e-07, 0.41036475, -0.91192144, 0.99999994, 1.7881393e-07, -1.3411045e-07, -0.20000005, 0.385, -1.1920929e-07)
+
+[node name="Lamp arm" parent="Desk lamp" parent_id_path=PackedInt32Array(1443889807) index="1" unique_id=1848180343]
+transform = Transform3D(-1.1920929e-07, -0.30700278, -0.9517086, -1.7881392e-07, 0.9517086, -0.3070028, 1, 1.5646219e-07, -1.4901161e-07, -0.049999952, 0.18500006, -1.1920929e-07)
+
+[node name="Shade" parent="Desk lamp" parent_id_path=PackedInt32Array(1443889807) index="3" unique_id=1286789805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30999994, 0.39999998, 0)
+
+[node name="Cup_003" parent="Tea forgotten on desk" parent_id_path=PackedInt32Array(1676628888) index="0" unique_id=548447458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.059000015, 2.7939677e-08)
+
+[node name="Dark tea surface_003" parent="Tea forgotten on desk" parent_id_path=PackedInt32Array(1676628888) index="1" unique_id=389917931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11900002, 2.7939677e-08)
+
+[node name="Handle_003" parent="Tea forgotten on desk" parent_id_path=PackedInt32Array(1676628888) index="2" unique_id=738221872]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0.06500006, 0.06099999, 2.7939677e-08)
+
+[node name="Lip_003" parent="Tea forgotten on desk" parent_id_path=PackedInt32Array(1676628888) index="3" unique_id=109885655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.120000005, 2.7939677e-08)
+
+[node name="Spine_039" parent="Notebook on desk 0" parent_id_path=PackedInt32Array(806301234) index="3" unique_id=1533258074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105000496, 0.018999934, 0)
+
+[node name="Spine_040" parent="Notebook on desk 1" parent_id_path=PackedInt32Array(1058451278) index="3" unique_id=1398496685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10499978, 0.018999994, 0)
+
+[node name="Spine_041" parent="Notebook on desk 2" parent_id_path=PackedInt32Array(349802167) index="3" unique_id=1934115773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10500002, 0.018999934, -1.1920929e-07)
+
+[node name="Pencil" parent="Pencil holder" parent_id_path=PackedInt32Array(678975522) index="1" unique_id=507521947]
+transform = Transform3D(0.6305927, 0.06928751, 0.7730149, -5.8770603e-08, 0.996007, -0.08927487, -0.77611405, 0.056296047, 0.62807477, 0.036335945, 0.125, -0.0071368217)
+
+[node name="Pencil_001" parent="Pencil holder" parent_id_path=PackedInt32Array(678975522) index="2" unique_id=1753332938]
+transform = Transform3D(0.63059264, 0.066976264, 0.77321863, -1.2293457e-07, 0.9962694, -0.086296834, -0.77611405, 0.054418053, 0.62824017, 0.005076647, 0.12900001, 0.0031359196)
+
+[node name="Pencil_002" parent="Pencil holder" parent_id_path=PackedInt32Array(678975522) index="3" unique_id=1636872286]
+transform = Transform3D(0.6305926, 0.06481405, 0.773403, -4.813965e-07, 0.99650687, -0.0835106, -0.77611405, 0.05266079, 0.62838984, 0.01871419, 0.13300002, 0.02801609)
+
+[node name="Pencil_003" parent="Pencil holder" parent_id_path=PackedInt32Array(678975522) index="4" unique_id=500130223]
+transform = Transform3D(0.6305927, 0.06278529, 0.7735702, 2.9346393e-07, 0.9967226, -0.08089724, -0.776114, 0.05101344, 0.6285259, -0.013756037, 0.13699996, -0.012828946)
+
+[node name="Pencil_004" parent="Pencil holder" parent_id_path=PackedInt32Array(678975522) index="5" unique_id=414388817]
+transform = Transform3D(0.6305926, 0.060880553, 0.7737226, -1.7792411e-08, 0.9969186, -0.078442775, -0.77611405, 0.04946542, 0.6286495, 0.03256488, 0.14100003, -0.0075716972)
+
+[node name="Pencil_005" parent="Pencil holder" parent_id_path=PackedInt32Array(678975522) index="6" unique_id=269662153]
+transform = Transform3D(0.63059264, 0.059087276, 0.77386147, -1.4067121e-08, 0.99709773, -0.07613221, -0.7761139, 0.048008393, 0.6287625, -0.008497715, 0.14499998, 0.0026091337)
+
+[node name="Letter" parent="Loose papers" parent_id_path=PackedInt32Array(1557501633) index="0" unique_id=1387699562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4901161e-08)
+
+[node name="Paper 0" parent="Loose papers" parent_id_path=PackedInt32Array(1557501633) index="1" unique_id=1404435489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4901161e-08)
+
+[node name="Paper 1" parent="Loose papers" parent_id_path=PackedInt32Array(1557501633) index="2" unique_id=577087149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4901161e-08)
+
+[node name="Paper 2" parent="Loose papers" parent_id_path=PackedInt32Array(1557501633) index="3" unique_id=1405138435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4901161e-08)
+
+[node name="Ruler mark" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="0" unique_id=875240758]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.13000011, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_001" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="1" unique_id=1222049446]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.1170001, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_002" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="2" unique_id=950852911]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.10400033, 0.0039999485, 0.00999999)
+
+[node name="Ruler mark_003" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="3" unique_id=1319214535]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.09100032, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_004" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="4" unique_id=1577616277]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.07800031, 0.0039999485, 0.00999999)
+
+[node name="Ruler mark_005" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="5" unique_id=35614387]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.06500006, 0.0039999485, 0.00999999)
+
+[node name="Ruler mark_006" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="6" unique_id=1561371569]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.052000523, 0.0039999485, 0.010000169)
+
+[node name="Ruler mark_007" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="7" unique_id=1209645833]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.039000273, 0.0039999485, 0.00999999)
+
+[node name="Ruler mark_008" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="8" unique_id=1594534890]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.026000261, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_009" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="9" unique_id=1943384980]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.013000488, 0.0039999485, 0.01000005)
+
+[node name="Ruler mark_010" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="10" unique_id=1643145103]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -2.3841858e-07, 0.0039999485, 0.00999999)
+
+[node name="Ruler mark_011" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="11" unique_id=1932957020]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.012999773, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_012" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="12" unique_id=980670847]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.025999784, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_013" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="13" unique_id=1010402905]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.038999557, 0.0039999485, 0.01000005)
+
+[node name="Ruler mark_014" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="14" unique_id=1571237616]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.05199957, 0.0039999485, 0.01000005)
+
+[node name="Ruler mark_015" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="15" unique_id=1001256518]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.06499982, 0.0039999485, 0.009999931)
+
+[node name="Ruler mark_016" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="16" unique_id=1049674083]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.07799983, 0.0039999485, 0.01000011)
+
+[node name="Ruler mark_017" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="17" unique_id=876174687]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.09099984, 0.0039999485, 0.01000005)
+
+[node name="Ruler mark_018" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="18" unique_id=686723737]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.103999615, 0.0039999485, 0.009999931)
+
+[node name="Ruler mark_019" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="19" unique_id=1276344073]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.116999626, 0.0039999485, 0.01000005)
+
+[node name="Wood ruler" parent="Desk ruler" parent_id_path=PackedInt32Array(283574401) index="20" unique_id=904419215]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
+
+[node name="Stem_009" parent="Windowsill geranium" parent_id_path=PackedInt32Array(1311526921) index="11" unique_id=2031329334]
+transform = Transform3D(-0.67546326, -0.34959835, -0.64925396, 4.7300546e-08, 0.880471, -0.4741, 0.7373939, -0.3202371, -0.59472585, -0.036132336, 0.25899994, -0.033097684)
+
+[node name="Stem_010" parent="Windowsill geranium" parent_id_path=PackedInt32Array(1311526921) index="12" unique_id=2145370639]
+transform = Transform3D(0.9961646, 0.036013424, 0.079744, 0, 0.9113706, -0.41158676, -0.087498985, 0.4100082, 0.9078751, 0.0042874813, 0.2765, 0.04881209)
+
+[node name="Stem_011" parent="Windowsill geranium" parent_id_path=PackedInt32Array(1311526921) index="13" unique_id=38534359]
+transform = Transform3D(-0.7936679, 0.33745265, 0.5061788, 4.4703476e-08, 0.8320501, -0.5547002, -0.60835123, -0.4402477, -0.6603715, 0.029809237, 0.24150002, -0.038889706)
+
+[node name="Stem_012" parent="Windowsill geranium" parent_id_path=PackedInt32Array(1311526921) index="14" unique_id=1444846576]
+transform = Transform3D(0.17432652, -0.46684045, -0.86698925, -7.450581e-08, 0.88047117, -0.47409996, 0.98468804, 0.082648255, 0.15348943, -0.04824972, 0.25899994, 0.008542001)
+
+[node name="Stem_013" parent="Windowsill geranium" parent_id_path=PackedInt32Array(1311526921) index="15" unique_id=2006239902]
+transform = Transform3D(0.53657293, 0.34731913, 0.7690637, -6.19314e-08, 0.9113706, -0.4115867, -0.84385395, 0.22084622, 0.48901683, 0.041348934, 0.2765, 0.026292086)
+
+[node name="Stem_014" parent="Windowsill geranium" parent_id_path=PackedInt32Array(1311526921) index="16" unique_id=457358074]
+transform = Transform3D(-0.9656577, -0.14412078, -0.21618104, -1.4060133e-08, 0.8320502, -0.5547003, 0.25981733, -0.5356506, -0.80347574, -0.012731075, 0.24150002, -0.047317207)
+
+[node name="Carpet fringe" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="0" unique_id=1750730932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.07, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_001" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="1" unique_id=1039300938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0229999, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_002" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="2" unique_id=2024611735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.976, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_003" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="3" unique_id=398135796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.929, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_004" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="4" unique_id=1050533165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88199997, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_005" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="5" unique_id=1567093791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83500004, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_006" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="6" unique_id=1930811591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.788, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_007" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="7" unique_id=470253063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74099994, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_008" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="8" unique_id=447673056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.694, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_009" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="9" unique_id=1275648528]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6470001, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_010" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="10" unique_id=2131650745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_011" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="11" unique_id=229573637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_012" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="12" unique_id=2042303951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50600004, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_013" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="13" unique_id=264257781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.459, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_014" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="14" unique_id=1608337523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.412, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_015" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="15" unique_id=761748727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.365, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_016" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="16" unique_id=52453158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31799996, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_017" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="17" unique_id=1064739570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27100003, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_018" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="18" unique_id=610843060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22399998, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_019" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="19" unique_id=188415004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17700005, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_020" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="20" unique_id=706587891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_021" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="21" unique_id=1811668709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.083, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_022" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="22" unique_id=584242878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036000006, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_023" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="23" unique_id=1228263022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010999985, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_024" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="24" unique_id=939180575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057999976, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_025" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="25" unique_id=236439525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_026" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="26" unique_id=856267073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15199998, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_027" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="27" unique_id=1395267124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.199, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_028" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="28" unique_id=1345887739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24599999, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_029" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="29" unique_id=1440020370]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.293, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_030" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="30" unique_id=1809738778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.34, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_031" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="31" unique_id=1844218919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.387, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_032" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="32" unique_id=667675209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.434, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_033" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="33" unique_id=1186466915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.481, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_034" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="34" unique_id=1482526006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.528, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_035" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="35" unique_id=1634308783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.575, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_036" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="36" unique_id=1950681466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.622, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_037" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="37" unique_id=216300270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.669, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_038" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="38" unique_id=16977556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.716, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_039" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="39" unique_id=1057594166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.763, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_040" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="40" unique_id=936892267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_041" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="41" unique_id=171486597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_042" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="42" unique_id=1323036662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.904, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_043" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="43" unique_id=1893933622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.951, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_044" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="44" unique_id=1574888708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.998, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_045" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="45" unique_id=1393106394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.045, 0.0019999966, 1.5900002)
+
+[node name="Carpet fringe_046" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="46" unique_id=1671058263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.07, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_047" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="47" unique_id=86121293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0229999, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_048" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="48" unique_id=36963721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.976, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_049" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="49" unique_id=1521918572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.929, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_050" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="50" unique_id=501381385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88199997, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_051" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="51" unique_id=831908891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83500004, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_052" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="52" unique_id=1965639552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.788, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_053" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="53" unique_id=412308107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74099994, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_054" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="54" unique_id=352062258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.694, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_055" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="55" unique_id=1108861936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6470001, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_056" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="56" unique_id=1975310049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_057" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="57" unique_id=1584803825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_058" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="58" unique_id=705140344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50600004, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_059" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="59" unique_id=1931065809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.459, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_060" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="60" unique_id=785985628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.412, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_061" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="61" unique_id=1404029759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.365, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_062" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="62" unique_id=1004287163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31799996, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_063" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="63" unique_id=594141745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27100003, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_064" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="64" unique_id=1431440032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22399998, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_065" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="65" unique_id=1188405429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17700005, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_066" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="66" unique_id=1642009046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_067" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="67" unique_id=1871636839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.083, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_068" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="68" unique_id=778368318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036000006, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_069" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="69" unique_id=559171622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010999985, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_070" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="70" unique_id=634379175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057999976, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_071" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="71" unique_id=2067305208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_072" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="72" unique_id=2098535745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15199998, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_073" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="73" unique_id=1010230722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.199, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_074" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="74" unique_id=1933615511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24599999, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_075" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="75" unique_id=1543615014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.293, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_076" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="76" unique_id=725651660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.34, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_077" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="77" unique_id=1385485784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.387, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_078" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="78" unique_id=1202008838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.434, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_079" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="79" unique_id=1534312536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.481, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_080" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="80" unique_id=39481402]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.528, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_081" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="81" unique_id=922636065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.575, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_082" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="82" unique_id=967311675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.622, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_083" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="83" unique_id=2135449813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.669, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_084" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="84" unique_id=3260888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.716, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_085" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="85" unique_id=228309853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.763, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_086" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="86" unique_id=1852080314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_087" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="87" unique_id=141368056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_088" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="88" unique_id=765918295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.904, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_089" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="89" unique_id=638458117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.951, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_090" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="90" unique_id=1442515725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.998, 0.0019999966, -1.5899999)
+
+[node name="Carpet fringe_091" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="91" unique_id=433811604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.045, 0.0019999966, -1.5899999)
+
+[node name="Woven carpet" parent="Persian carpet" parent_id_path=PackedInt32Array(352265595) index="92" unique_id=838265095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.450581e-09, 2.2351742e-08, -5.9604645e-08)
+
+[node name="Armchair tapered foot" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="0" unique_id=1942308513]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.39999998, 0.13999999, 0.3499999)
+
+[node name="Armchair tapered foot_001" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="1" unique_id=698665135]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.39999998, 0.13999999, -0.35000014)
+
+[node name="Armchair tapered foot_002" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="2" unique_id=691907495]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0.4000001, 0.13999999, 0.34999967)
+
+[node name="Armchair tapered foot_003" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="3" unique_id=1075298882]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0.4000002, 0.13999999, -0.3499999)
+
+[node name="Armrest" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="4" unique_id=871880683]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.45000005, 0.65, 0)
+
+[node name="Armrest_001" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="5" unique_id=242381249]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0.45000017, 0.65, 0)
+
+[node name="Back cushion" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="6" unique_id=1444891002]
+transform = Transform3D(1, 1.1175871e-08, 1.1920929e-07, 0, 0.99280864, -0.119712204, -2.9802322e-08, 0.11971222, 0.9928087, -1.1920929e-07, 0.9, -0.3000002)
+
+[node name="Back tuft button" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="7" unique_id=1900138664]
+transform = Transform3D(0.014999999, 0, 4.656613e-10, 0, 0.014999999, 0, -9.313226e-10, 0, 0.009, -0.22999978, 0.99, -0.1630001)
+
+[node name="Back tuft button_001" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="8" unique_id=743421831]
+transform = Transform3D(0.014999999, 0, 4.656613e-10, 0, 0.014999999, 0, -9.313226e-10, 0, 0.009, 0, 0.99, -0.1630001)
+
+[node name="Back tuft button_002" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="9" unique_id=1409533947]
+transform = Transform3D(0.014999999, 0, 4.656613e-10, 0, 0.014999999, 0, -9.313226e-10, 0, 0.009, 0.23000014, 0.99, -0.1630001)
+
+[node name="Chair base" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="10" unique_id=1955462711]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0, 0.37, 0)
+
+[node name="Seat cushion_001" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="11" unique_id=223318664]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -1.1920929e-07, 0.57, 0.05499983)
+
+[node name="Wood arm cap" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="12" unique_id=1416695830]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.44999993, 0.79, 0.03999996)
+
+[node name="Wood arm cap_001" parent="Reading armchair" parent_id_path=PackedInt32Array(496966545) index="13" unique_id=1216357288]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0.45000005, 0.79, 0.03999996)
+
+[node name="Lower magazine shelf" parent="Coffee table" parent_id_path=PackedInt32Array(473952134) index="0" unique_id=1188175155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.19, 0)
+
+[node name="Table top" parent="Coffee table" parent_id_path=PackedInt32Array(473952134) index="1" unique_id=232449398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-08, 0.48000002, 0)
+
+[node name="Tapered table leg" parent="Coffee table" parent_id_path=PackedInt32Array(473952134) index="2" unique_id=1947479425]
+transform = Transform3D(-0.61703134, 0.06265713, 0.78444016, -3.5310885e-07, 0.9968251, -0.07962166, -0.78693855, -0.049129345, -0.6150725, -0.45319998, 0.25, 0.24035001)
+
+[node name="Tapered table leg_001" parent="Coffee table" parent_id_path=PackedInt32Array(473952134) index="3" unique_id=815402801]
+transform = Transform3D(0.6170312, 0.062658004, 0.78444016, -3.5540748e-07, 0.99682504, -0.079622194, -0.7869386, 0.049129102, 0.6150722, -0.45319998, 0.25, -0.24035001)
+
+[node name="Tapered table leg_002" parent="Coffee table" parent_id_path=PackedInt32Array(473952134) index="4" unique_id=285087102]
+transform = Transform3D(-0.61703134, -0.06265713, -0.78444016, 3.5310885e-07, 0.9968251, -0.07962166, 0.78693855, -0.049129345, -0.6150725, 0.45319998, 0.25, 0.24035001)
+
+[node name="Tapered table leg_003" parent="Coffee table" parent_id_path=PackedInt32Array(473952134) index="5" unique_id=1199625730]
+transform = Transform3D(0.6170312, -0.062658004, -0.78444016, 3.5540748e-07, 0.99682504, -0.079622194, 0.7869386, 0.049129102, 0.6150722, 0.45319998, 0.25, -0.24035001)
+
+[node name="Newspaper" parent="Open newspaper" parent_id_path=PackedInt32Array(107412894) index="0" unique_id=659909875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0, 0)
+
+[node name="Biscuit" parent="Biscuit plate" parent_id_path=PackedInt32Array(169708718) index="0" unique_id=2092690183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045000017, 0.018999994, 0.03300011)
+
+[node name="Biscuit_001" parent="Biscuit plate" parent_id_path=PackedInt32Array(169708718) index="1" unique_id=603210445]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025000006, 0.018999994, 0.03300011)
+
+[node name="Biscuit_002" parent="Biscuit plate" parent_id_path=PackedInt32Array(169708718) index="2" unique_id=1862908666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045000017, 0.018999994, -0.026999831)
+
+[node name="Biscuit_003" parent="Biscuit plate" parent_id_path=PackedInt32Array(169708718) index="3" unique_id=390003311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025000006, 0.018999994, -0.026999831)
+
+[node name="Plate" parent="Biscuit plate" parent_id_path=PackedInt32Array(169708718) index="4" unique_id=731933639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1920929e-07)
+
+[node name="Cover bottom_009" parent="Magazine under table 1" parent_id_path=PackedInt32Array(1311037017) index="0" unique_id=1012707711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9802322e-08, 0)
+
+[node name="Pages_009" parent="Magazine under table 1" parent_id_path=PackedInt32Array(1311037017) index="2" unique_id=945021627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.018000036, 0)
+
+[node name="Spine_042" parent="Magazine under table 1" parent_id_path=PackedInt32Array(1311037017) index="3" unique_id=667233399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10499996, 0.018999964, 0)
+
+[node name="Cover bottom_010" parent="Magazine under table 2" parent_id_path=PackedInt32Array(1315140938) index="0" unique_id=1871557452]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="Bakelite plate" parent="Door light switch" parent_id_path=PackedInt32Array(1466542537) index="0" unique_id=949211042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0, 0)
+
+[node name="Toggle" parent="Door light switch" parent_id_path=PackedInt32Array(1466542537) index="1" unique_id=1235817204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0, 0.01999998)
+
+[node name="Socket hole" parent="Bed outlet" parent_id_path=PackedInt32Array(923603963) index="1" unique_id=2010393177]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, -0.01699996, 0, 0.015000105)
+
+[node name="Socket hole_001" parent="Bed outlet" parent_id_path=PackedInt32Array(923603963) index="2" unique_id=929039077]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0.01699996, 0, 0.015000105)
+
+[node name="Bakelite plate_002" parent="TV outlet" parent_id_path=PackedInt32Array(513707419) index="0" unique_id=334170123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9802322e-08, 0)
+
+[node name="Socket hole_002" parent="TV outlet" parent_id_path=PackedInt32Array(513707419) index="1" unique_id=401939338]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, -0.01700002, 2.9802322e-08, 0.015000105)
+
+[node name="Socket hole_003" parent="TV outlet" parent_id_path=PackedInt32Array(513707419) index="2" unique_id=872801494]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0.01700002, 2.9802322e-08, 0.015000105)
+
+[node name="Lower shelf" parent="Telephone stand" parent_id_path=PackedInt32Array(1834443652) index="0" unique_id=367969306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.19999999, 0)
+
+[node name="Stand legs" parent="Telephone stand" parent_id_path=PackedInt32Array(1834443652) index="1" unique_id=1506119629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23999989, 0.34000003, 0.1400001)
+
+[node name="Stand legs_001" parent="Telephone stand" parent_id_path=PackedInt32Array(1834443652) index="2" unique_id=784854885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23999989, 0.34000003, -0.1400001)
+
+[node name="Stand legs_002" parent="Telephone stand" parent_id_path=PackedInt32Array(1834443652) index="3" unique_id=2051031505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24000007, 0.34000003, 0.1400001)
+
+[node name="Stand legs_003" parent="Telephone stand" parent_id_path=PackedInt32Array(1834443652) index="4" unique_id=946544086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24000007, 0.34000003, -0.1400001)
+
+[node name="Stand top" parent="Telephone stand" parent_id_path=PackedInt32Array(1834443652) index="5" unique_id=680007991]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.69, 0)
+
+[node name="Coiled handset cord" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="0" unique_id=1613707813]
+transform = Transform3D(-0.65998316, -0.71694094, 0.22453934, 6.096508e-08, -0.2988757, -0.9542921, 0.7512803, -0.6298167, 0.19725285, 0.19740468, 0.15600002, -0.07842922)
+
+[node name="Coiled handset cord_001" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="1" unique_id=682152520]
+transform = Transform3D(0.83005357, -0.53219295, 0.16667807, -5.9604638e-08, -0.29887578, -0.95429194, 0.55768365, 0.79211354, -0.248083, 0.18068689, 0.148, -0.07625747)
+
+[node name="Coiled handset cord_002" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="2" unique_id=686310422]
+transform = Transform3D(0.44608748, 0.8540814, -0.26749, -1.6551948e-07, -0.2988749, -0.95429224, -0.8949893, 0.42569795, -0.13332425, 0.18499482, 0.13999999, -0.059958458)
+
+[node name="Coiled handset cord_003" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="3" unique_id=555162325]
+transform = Transform3D(-0.94500524, 0.312106, -0.097748786, -2.1942e-08, -0.2988756, -0.95429224, -0.3270551, -0.9018113, 0.28243902, 0.20060241, 0.13199997, -0.06633067)
+
+[node name="Coiled handset cord_004" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="4" unique_id=648855844]
+transform = Transform3D(-0.20256987, -0.9345075, 0.2926794, 3.6480565e-09, -0.29887566, -0.954292, 0.9792677, -0.1933109, 0.06054329, 0.1922726, 0.12400001, -0.080987215)
+
+[node name="Coiled handset cord_005" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="5" unique_id=104495456]
+transform = Transform3D(0.9972055, -0.07129316, 0.022328328, -1.8995479e-08, -0.29887548, -0.9542921, 0.07470785, 0.9516253, -0.2980403, 0.17881161, 0.116, -0.07083821)
+
+[node name="Coiled handset cord_006" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="6" unique_id=1489953395]
+transform = Transform3D(-0.054399, 0.9528791, -0.29843315, 3.0040994e-08, -0.29887578, -0.95429206, -0.99851936, -0.05191248, 0.01625848, 0.19061017, 0.10799998, -0.05879712)
+
+[node name="Coiled handset cord_007" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="7" unique_id=1236851661]
+transform = Transform3D(-0.9831875, -0.1742529, 0.054574262, 1.4156105e-07, -0.2988756, -0.9542923, 0.18259913, -0.9382481, 0.29385066, 0.20103091, 0.100000024, -0.0720489)
+
+[node name="Coiled handset cord_008" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="8" unique_id=772321775]
+transform = Transform3D(0.3077555, -0.907976, 0.2843697, 1.6527241e-07, -0.2988756, -0.9542922, 0.9514655, 0.2936887, -0.09198044, 0.18654698, 0.09200001, -0.080675125)
+
+[node name="Coiled handset cord_009" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="9" unique_id=513465756]
+transform = Transform3D(0.90388227, 0.40822855, -0.12785354, 3.7969038e-08, -0.2988757, -0.9542919, -0.4277816, 0.8625674, -0.27014837, 0.1798585, 0.08399999, -0.065200806)
+
+[node name="Coiled handset cord_010" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="10" unique_id=1590391016]
+transform = Transform3D(-0.54067624, 0.80277985, -0.25142348, 1.8687064e-07, -0.29887545, -0.95429206, -0.84123075, -0.51596296, 0.16159478, 0.19606614, 0.075999975, -0.060561657)
+
+[node name="Coiled handset cord_011" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="11" unique_id=1400986719]
+transform = Transform3D(-0.76455593, -0.615096, 0.19264233, 4.1195094e-08, -0.29887545, -0.954292, 0.64455736, -0.7296097, 0.22850716, 0.19857806, 0.06800002, -0.077231646)
+
+[node name="Coiled handset cord_012" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="12" unique_id=1086582016]
+transform = Transform3D(0.73769385, -0.6442764, 0.20178168, -4.954434e-08, -0.29887593, -0.954292, 0.6751355, 0.7039753, -0.22047892, 0.1817233, 0.060000002, -0.077575445)
+
+[node name="Coiled handset cord_013" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="13" unique_id=655102770]
+transform = Transform3D(0.5744603, 0.781119, -0.24463943, 0, -0.2988758, -0.95429206, -0.8185323, 0.54820293, -0.17169234, 0.18355459, 0.051999986, -0.060816526)
+
+[node name="Coiled handset cord_014" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="14" unique_id=1546357721]
+transform = Transform3D(-0.8857259, 0.44299042, -0.13874055, 1.7028148e-09, -0.29887542, -0.95429206, -0.46420854, -0.84524125, 0.2647217, 0.19993752, 0.04400003, -0.06479168)
+
+[node name="Coiled handset cord_015" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="15" unique_id=173073898]
+transform = Transform3D(-0.3462187, -0.89527285, 0.28039116, 5.9604645e-08, -0.29887545, -0.9542922, 0.93815386, -0.33039373, 0.10347629, 0.19388425, 0.036000013, -0.08052635)
+
+[node name="Coiled handset cord_016" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="16" unique_id=1638857436]
+transform = Transform3D(0.9749427, -0.21228878, 0.066486895, 1.8669244e-10, -0.29887545, -0.954292, 0.22245677, 0.9303799, -0.29138634, 0.17906123, 0.027999997, -0.072496414)
+
+[node name="Coiled handset cord_017" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="17" unique_id=238345429]
+transform = Transform3D(0.094986916, 0.94997734, -0.29752406, -2.6822093e-07, -0.29887536, -0.9542923, -0.99547863, 0.09064534, -0.028388977, 0.18893403, 0.01999998, -0.058830976)
+
+[node name="Coiled handset cord_018" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="18" unique_id=89079200]
+transform = Transform3D(-0.99941957, -0.032509573, 0.010181617, 9.118513e-08, -0.29887578, -0.9542921, 0.034066647, -0.9537382, 0.29870224, 0.20121306, 0.012000024, -0.070382595)
+
+[node name="Coiled handset cord_019" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="19" unique_id=1635879476]
+transform = Transform3D(0.16255224, -0.94159997, 0.29490048, 1.4901161e-07, -0.29887557, -0.95429206, 0.98670006, 0.15512238, -0.048582792, 0.18817604, 0.004000008, -0.08107042)
+
+[node name="Coiled handset cord_020" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="20" unique_id=538035417]
+transform = Transform3D(0.9575316, 0.2751497, -0.08617441, 7.1341657e-09, -0.29887578, -0.9542921, -0.2883286, 0.9137648, -0.28618297, 0.17925662, -0.004000008, -0.06676531)
+
+[node name="Coiled handset cord_021" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="21" unique_id=322963771]
+transform = Transform3D(-0.409298, 0.8706968, -0.27269435, -5.9604645e-08, -0.2988757, -0.95429206, -0.9124008, -0.39058983, 0.122329295, 0.19459206, -0.012000024, -0.05976367)
+
+[node name="Coiled handset cord_022" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="22" unique_id=653206449]
+transform = Transform3D(-0.85206, -0.49951833, 0.15644434, 8.451022e-08, -0.29887524, -0.9542921, 0.5234437, -0.8131142, 0.25465995, 0.19955975, -0.01999998, -0.075873375)
+
+[node name="Coiled handset cord_023" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="23" unique_id=426194634]
+transform = Transform3D(0.6288641, -0.7419767, 0.23238017, -6.897545e-08, -0.29887545, -0.9542922, 0.7775152, 0.6001201, -0.18795216, 0.18294424, -0.027999997, -0.07872391)
+
+[node name="Coiled handset cord_024" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="24" unique_id=624882083]
+transform = Transform3D(0.69000834, 0.69071794, -0.21632634, -1.9520396e-08, -0.2988751, -0.9542922, -0.7238014, 0.65846944, -0.20622629, 0.18225819, -0.036000013, -0.061879158)
+
+[node name="Dial center" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="25" unique_id=1644623334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0.14200002, 0.02499938)
+
+[node name="Dial_001" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="26" unique_id=602074326]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0.13, 0.02499938)
+
+[node name="Finger hole" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="27" unique_id=683750208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 0.143, -0.029999971)
+
+[node name="Finger hole_001" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="28" unique_id=1905538956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03232807, 0.143, -0.01949644)
+
+[node name="Finger hole_002" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="29" unique_id=2114748724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052308023, 0.143, 0.008004189)
+
+[node name="Finger hole_003" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="30" unique_id=1861959012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052307963, 0.143, 0.041995764)
+
+[node name="Finger hole_004" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="31" unique_id=332581453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03232819, 0.143, 0.06949592)
+
+[node name="Finger hole_005" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="32" unique_id=2071056233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.143, 0.079999685)
+
+[node name="Finger hole_006" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="33" unique_id=1218416698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03232807, 0.143, 0.06949592)
+
+[node name="Finger hole_007" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="34" unique_id=177579982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05230838, 0.143, 0.041995764)
+
+[node name="Finger hole_008" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="35" unique_id=2101191661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05230826, 0.143, 0.008003712)
+
+[node name="Finger hole_009" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="36" unique_id=809047269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.032328427, 0.143, -0.01949644)
+
+[node name="Handset bridge" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="37" unique_id=1920783506]
+transform = Transform3D(1.1920929e-07, 1, 1.1920929e-07, 0, 1.1920929e-07, -1, -1, 1.1920929e-07, 0, 0, 0.20499998, -0.06999993)
+
+[node name="Handset earpiece" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="38" unique_id=1561007643]
+transform = Transform3D(0.055, 0, 0, 0, 0.039000005, 0, 0, 0, 0.060000002, -0.15000004, 0.18, -0.07000041)
+
+[node name="Handset earpiece_001" parent="Rotary telephone" parent_id_path=PackedInt32Array(255063326) index="39" unique_id=255404558]
+transform = Transform3D(0.055, 0, 0, 0, 0.039000005, 0, 0, 0, 0.060000002, 0.14999992, 0.18, -0.06999993)
+
+[node name="Cover bottom_012" parent="Telephone directory" parent_id_path=PackedInt32Array(490943905) index="0" unique_id=706827713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 2.9802322e-08, 0)
+
+[node name="Cover top_012" parent="Telephone directory" parent_id_path=PackedInt32Array(490943905) index="1" unique_id=726848155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.039000005, 0)
+
+[node name="Pages_012" parent="Telephone directory" parent_id_path=PackedInt32Array(490943905) index="2" unique_id=133057524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0.018000036, 0)
+
+[node name="Spine_045" parent="Telephone directory" parent_id_path=PackedInt32Array(490943905) index="3" unique_id=659341900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1049999, 0.018999964, 0)
+
+[node name="Cassette shell" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="0" unique_id=522405966]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, 0, 0.012000024, 0)
+
+[node name="Cream label" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="1" unique_id=1982031761]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, 0, 0, 0)
+
+[node name="Hub center" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="2" unique_id=2028557507]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, -0.023999989, 0.028999984, -2.3841858e-07)
+
+[node name="Hub center_001" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="3" unique_id=574098248]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, 0.023999989, 0.028999984, 0)
+
+[node name="Label stripe" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="4" unique_id=1643886925]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, 0, 0.02700001, -0.017000198)
+
+[node name="Tape hub" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="5" unique_id=350631558]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, -0.023999989, 0.026000023, -2.3841858e-07)
+
+[node name="Tape hub_001" parent="Loose cassette 1" parent_id_path=PackedInt32Array(352582563) index="6" unique_id=1885849287]
+transform = Transform3D(1, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 1, 0.023999989, 0.026000023, 0)
+
+[node name="Hub center_002" parent="Loose cassette 2" parent_id_path=PackedInt32Array(718960961) index="2" unique_id=929510579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023999989, 0.029000044, 2.3841858e-07)
+
+[node name="Hub center_003" parent="Loose cassette 2" parent_id_path=PackedInt32Array(718960961) index="3" unique_id=2114662312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024000049, 0.029000044, 0)
+
+[node name="Label stripe_001" parent="Loose cassette 2" parent_id_path=PackedInt32Array(718960961) index="4" unique_id=1554212540]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02700007, -0.01699996)
+
+[node name="Tape hub_002" parent="Loose cassette 2" parent_id_path=PackedInt32Array(718960961) index="5" unique_id=1472789583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023999989, 0.026000082, 2.3841858e-07)
+
+[node name="Tape hub_003" parent="Loose cassette 2" parent_id_path=PackedInt32Array(718960961) index="6" unique_id=1240620863]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024000049, 0.026000082, 0)
+
+[node name="Hub center_004" parent="Loose cassette 3" parent_id_path=PackedInt32Array(598662862) index="2" unique_id=1349742650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024000049, 0.028999984, 0)
+
+[node name="Hub center_005" parent="Loose cassette 3" parent_id_path=PackedInt32Array(598662862) index="3" unique_id=1266282047]
+transform = Transform3D(-0.6905608, 0.34811637, 0.633988, -0.20036232, -0.93432146, 0.29478508, 0.69496804, 0.076539785, 0.71495557, 0.02399993, 0.028999984, -4.7683716e-07)
+
+[node name="Label stripe_002" parent="Loose cassette 3" parent_id_path=PackedInt32Array(598662862) index="4" unique_id=1980001325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9604645e-08, 0.02700001, -0.01699996)
+
+[node name="Tape hub_004" parent="Loose cassette 3" parent_id_path=PackedInt32Array(598662862) index="5" unique_id=2033455822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024000049, 0.026000023, 0)
+
+[node name="Tape hub_005" parent="Loose cassette 3" parent_id_path=PackedInt32Array(598662862) index="6" unique_id=1844864949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023999989, 0.026000023, -2.3841858e-07)
+
+[node name="Hub center_006" parent="Loose cassette 4" parent_id_path=PackedInt32Array(270696331) index="2" unique_id=1351071302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024000049, 0.028999984, -2.3841858e-07)
+
+[node name="Hub center_007" parent="Loose cassette 4" parent_id_path=PackedInt32Array(270696331) index="3" unique_id=423551869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02399993, 0.028999984, 0)
+
+[node name="Label stripe_003" parent="Loose cassette 4" parent_id_path=PackedInt32Array(270696331) index="4" unique_id=2030568685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0.02700001, -0.01699996)
+
+[node name="Tape hub_006" parent="Loose cassette 4" parent_id_path=PackedInt32Array(270696331) index="5" unique_id=1792708690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024000049, 0.026000023, -2.3841858e-07)
+
+[node name="Tape hub_007" parent="Loose cassette 4" parent_id_path=PackedInt32Array(270696331) index="6" unique_id=1967720702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02399993, 0.026000023, 0)
+
+[node name="Hub center_008" parent="Loose cassette 5" parent_id_path=PackedInt32Array(1767844916) index="2" unique_id=557142312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02399981, 0.028999984, 0)
+
+[node name="Hub center_009" parent="Loose cassette 5" parent_id_path=PackedInt32Array(1767844916) index="3" unique_id=1754574299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024000049, 0.028999984, 0)
+
+[node name="Label stripe_004" parent="Loose cassette 5" parent_id_path=PackedInt32Array(1767844916) index="4" unique_id=154404212]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02700001, -0.01699996)
+
+[node name="Tape hub_008" parent="Loose cassette 5" parent_id_path=PackedInt32Array(1767844916) index="5" unique_id=98956691]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02399981, 0.026000023, 0)
+
+[node name="Tape hub_009" parent="Loose cassette 5" parent_id_path=PackedInt32Array(1767844916) index="6" unique_id=1002574213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024000049, 0.026000023, 0)
+
+[node name="Stand_001" parent="Small bedside portrait" parent_id_path=PackedInt32Array(1578487573) index="1" unique_id=1461538174]
+transform = Transform3D(-1, -1.1175871e-07, -3.7252903e-08, 1.12750804e-07, -0.81373334, -0.5812384, 2.9802322e-08, -0.5812384, 0.81373334, 5.9604645e-08, 0.07700002, -0.06499982)
+
+[node name="Basket body" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="0" unique_id=1962845531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18, 2.9802322e-08)
+
+[node name="Basket interior" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="1" unique_id=874049838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.361, 2.9802322e-08)
+
+[node name="Basket rim" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="2" unique_id=1547064956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36, 2.9802322e-08)
+
+[node name="Crumpled paper" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="3" unique_id=1706929370]
+transform = Transform3D(0.058, 0, 0, 0, 0.04, 0, 0, 0, 0.047000006, 0.0048573017, 0.38698483, -0.043801516)
+
+[node name="Crumpled paper_001" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="4" unique_id=283535341]
+transform = Transform3D(0.058, 0, 0, 0, 0.04, 0, 0, 0, 0.047000006, -0.007788658, 0.36528957, 0.023471624)
+
+[node name="Crumpled paper_002" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="5" unique_id=1456525066]
+transform = Transform3D(0.058, 0, 0, 0, 0.04, 0, 0, 0, 0.047000006, -0.015516043, 0.35842204, 0.010197312)
+
+[node name="Crumpled paper_003" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="6" unique_id=896469293]
+transform = Transform3D(0.058, 0, 0, 0, 0.04, 0, 0, 0, 0.047000006, 0.05054307, 0.36606562, 0.035026103)
+
+[node name="Crumpled paper_004" parent="Wastepaper basket" parent_id_path=PackedInt32Array(1980391498) index="7" unique_id=747863802]
+transform = Transform3D(0.058, 0, 0, 0, 0.04, 0, 0, 0, 0.047000006, 0.07212901, 0.34432554, -0.02222976)
+
+[node name="Clock face" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="0" unique_id=130578050]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0.039000034)
+
+[node name="Clock hour" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="1" unique_id=1103786023]
+transform = Transform3D(1.1920929e-07, -0.83844376, 0.54498833, 1.4901161e-07, -0.54498833, -0.83844376, 1, 1.192093e-07, 1.1920929e-07, -0.029999971, -0.019500017, 0.0539999)
+
+[node name="Clock minute" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="2" unique_id=1807574434]
+transform = Transform3D(-2.3841856e-07, 0.36990708, 0.9290688, 4.4703484e-08, 0.92906874, -0.36990708, -1, -1.4901161e-08, -2.3841858e-07, 0.021499991, 0.0539999, 0.052000046)
+
+[node name="Hour marker_012" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="4" unique_id=895259458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1270001, 0.046000004)
+
+[node name="Hour marker_013" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="5" unique_id=1309426024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06350005, 0.10998511, 0.046000004)
+
+[node name="Hour marker_014" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="6" unique_id=1604775084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10998523, 0.06349993, 0.046000004)
+
+[node name="Hour marker_015" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="7" unique_id=259291796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12699997, 0, 0.046000004)
+
+[node name="Hour marker_016" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="8" unique_id=1056333118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10998523, -0.06349993, 0.046000004)
+
+[node name="Hour marker_017" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="9" unique_id=1784693172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06350005, -0.10998511, 0.046000004)
+
+[node name="Hour marker_018" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="10" unique_id=989681151]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1270001, 0.046000004)
+
+[node name="Hour marker_019" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="11" unique_id=1885106430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06350005, -0.10998511, 0.046000004)
+
+[node name="Hour marker_020" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="12" unique_id=186792823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10998523, -0.06349993, 0.046000004)
+
+[node name="Hour marker_021" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="13" unique_id=1249215020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12699997, 0, 0.046000004)
+
+[node name="Hour marker_022" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="14" unique_id=1506370957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10998523, 0.06349993, 0.046000004)
+
+[node name="Hour marker_023" parent="Wall clock" parent_id_path=PackedInt32Array(231646284) index="15" unique_id=1848067924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06350005, 0.10998511, 0.046000004)
+
+[node name="Fret" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="0" unique_id=1858408430]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.043973446, 0.56048185, -0.08562201)
+
+[node name="Fret_001" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="1" unique_id=1711571541]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.05758071, 0.59815, -0.10127282)
+
+[node name="Fret_002" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="2" unique_id=1195180363]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.07118797, 0.6358182, -0.11692363)
+
+[node name="Fret_003" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="3" unique_id=608922903]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.084795475, 0.67348635, -0.1325745)
+
+[node name="Fret_004" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="4" unique_id=1055915161]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.098403215, 0.7111546, -0.14822531)
+
+[node name="Fret_005" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="5" unique_id=380188067]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.11201048, 0.74882275, -0.163876)
+
+[node name="Fret_006" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="6" unique_id=902565719]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.12561798, 0.786491, -0.17952684)
+
+[node name="Fret_007" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="7" unique_id=257333520]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.139225, 0.8241592, -0.19517764)
+
+[node name="Fret_008" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="8" unique_id=1335338052]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.15283251, 0.8618273, -0.2108284)
+
+[node name="Fret_009" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="9" unique_id=926368775]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.16643977, 0.8994956, -0.22647935)
+
+[node name="Fret_010" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="10" unique_id=541817809]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.18004704, 0.9371637, -0.24212998)
+
+[node name="Fretboard" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="11" unique_id=319834303]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.12257075, 0.76622254, -0.1815035)
+
+[node name="Guitar body" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="12" unique_id=1607703846]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, -0.1484592, -0.045583226, 0.10172498)
+
+[node name="Guitar bridge" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="13" unique_id=903070719]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, -0.09449816, 0.2020106, 0.085155606)
+
+[node name="Guitar neck" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="14" unique_id=2089761525]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.14267492, 0.760341, -0.23312956)
+
+[node name="Headstock" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="15" unique_id=1753300335]
+transform = Transform3D(0.91087145, 0.31644928, -0.2649021, -0.17345646, 0.8760045, 0.45003211, 0.37446782, -0.3639724, 0.85281765, 0.24393821, 1.0406624, -0.34960073)
+
+[node name="Sound hole" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="16" unique_id=1869454445]
+transform = Transform3D(0.91087145, -0.26490217, -0.31644928, -0.17345653, 0.45003194, -0.87600464, 0.37446785, 0.8528177, 0.36397222, -0.0256598, 0.3819212, 0.0010460019)
+
+[node name="Sound hole rosette" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="17" unique_id=300253832]
+transform = Transform3D(0.91087145, -0.26490217, -0.31644928, -0.17345653, 0.45003194, -0.87600464, 0.37446785, 0.8528177, 0.36397222, -0.027778864, 0.38552144, 0.007868648)
+
+[node name="String" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="18" unique_id=1013657222]
+transform = Transform3D(-0.9108715, 0.3164494, 0.26490209, 0.17345656, 0.8760045, -0.45003214, -0.37446788, -0.36397237, -0.85281765, 0.056773186, 0.66263187, -0.13086051)
+
+[node name="String_001" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="19" unique_id=1215826314]
+transform = Transform3D(-0.9108715, 0.3164494, 0.26490209, 0.17345656, 0.8760045, -0.45003214, -0.37446788, -0.36397237, -0.85281765, 0.06497145, 0.66107076, -0.12749028)
+
+[node name="String_002" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="20" unique_id=1680523455]
+transform = Transform3D(-0.9108715, 0.3164494, 0.26490209, 0.17345656, 0.8760045, -0.45003214, -0.37446788, -0.36397237, -0.85281765, 0.07316899, 0.65950966, -0.12412006)
+
+[node name="String_003" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="21" unique_id=712332687]
+transform = Transform3D(-0.9108715, 0.3164494, 0.26490209, 0.17345656, 0.8760045, -0.45003214, -0.37446788, -0.36397237, -0.85281765, 0.081367016, 0.65794855, -0.12074971)
+
+[node name="String_004" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="22" unique_id=399222384]
+transform = Transform3D(-0.9108715, 0.3164494, 0.26490209, 0.17345656, 0.8760045, -0.45003214, -0.37446788, -0.36397237, -0.85281765, 0.08956432, 0.65638745, -0.117379606)
+
+[node name="String_005" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="23" unique_id=1802859148]
+transform = Transform3D(-0.9108715, 0.3164494, 0.26490209, 0.17345656, 0.8760045, -0.45003214, -0.37446788, -0.36397237, -0.85281765, 0.09776282, 0.65482634, -0.11400944)
+
+[node name="Tuning peg" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="24" unique_id=1115270297]
+transform = Transform3D(-0.31644928, 0.91087145, -0.26490203, -0.8760044, -0.17345645, 0.45003211, 0.36397243, 0.37446773, 0.85281765, 0.17164183, 1.0076165, -0.3546192)
+
+[node name="Tuning peg_001" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="25" unique_id=120190884]
+transform = Transform3D(-0.31644928, 0.91087145, -0.26490203, -0.8760044, -0.17345645, 0.45003211, 0.36397243, 0.37446773, 0.85281765, 0.28459, 0.98610795, -0.3081851)
+
+[node name="Tuning peg_002" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="26" unique_id=1817070985]
+transform = Transform3D(-0.31644928, 0.91087145, -0.26490203, -0.8760044, -0.17345645, 0.45003211, 0.36397243, 0.37446773, 0.85281765, 0.187464, 1.0514168, -0.37281775)
+
+[node name="Tuning peg_003" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="27" unique_id=1472770299]
+transform = Transform3D(-0.31644928, 0.91087145, -0.26490203, -0.8760044, -0.17345645, 0.45003211, 0.36397243, 0.37446773, 0.85281765, 0.30041194, 1.0299082, -0.32638377)
+
+[node name="Tuning peg_004" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="28" unique_id=1674498308]
+transform = Transform3D(-0.31644928, 0.91087145, -0.26490203, -0.8760044, -0.17345645, 0.45003211, 0.36397243, 0.37446773, 0.85281765, 0.20328665, 1.095217, -0.3910163)
+
+[node name="Tuning peg_005" parent="Acoustic guitar" parent_id_path=PackedInt32Array(673442716) index="29" unique_id=947360978]
+transform = Transform3D(-0.31644928, 0.91087145, -0.26490203, -0.8760044, -0.17345645, 0.45003211, 0.36397243, 0.37446773, 0.85281765, 0.31623483, 1.0737083, -0.34458226)
+
+[node name="Front tile" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="0" unique_id=1326679758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02700007, 0.013999999, 0.042999744)
+
+[node name="Front tile_001" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="1" unique_id=1120641723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02700007, 0.04100001, 0.042999744)
+
+[node name="Front tile_002" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="2" unique_id=1284655477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02700007, 0.06800002, 0.042999744)
+
+[node name="Front tile_003" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="3" unique_id=1776389458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.013999999, 0.042999744)
+
+[node name="Front tile_004" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="4" unique_id=220453723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04100001, 0.042999744)
+
+[node name="Front tile_005" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="5" unique_id=567210444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.06800002, 0.042999744)
+
+[node name="Front tile_006" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="6" unique_id=1243998239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026999831, 0.013999999, 0.042999983)
+
+[node name="Front tile_007" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="7" unique_id=1276469134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026999831, 0.04100001, 0.042999983)
+
+[node name="Front tile_008" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="8" unique_id=736138108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026999831, 0.06800002, 0.042999983)
+
+[node name="Top tile" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="10" unique_id=1017266987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02700007, 0.08499998, 0.026999712)
+
+[node name="Top tile_001" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="11" unique_id=996519330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02700007, 0.08499998, 0)
+
+[node name="Top tile_002" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="12" unique_id=1990847986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02700007, 0.08499998, -0.027000189)
+
+[node name="Top tile_003" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="13" unique_id=535297768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08499998, 0.026999712)
+
+[node name="Top tile_005" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="15" unique_id=844438490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08499998, -0.027000189)
+
+[node name="Top tile_006" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="16" unique_id=1824334476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02699995, 0.08499998, 0.026999712)
+
+[node name="Top tile_007" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="17" unique_id=1039161413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02699989, 0.08499998, -2.3841858e-07)
+
+[node name="Top tile_008" parent="Colour puzzle" parent_id_path=PackedInt32Array(441082355) index="18" unique_id=40224552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02699995, 0.08499998, -0.027000189)
+
+[node name="Crate bottom" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="0" unique_id=1550171868]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0, 0.01999998, 0)
+
+[node name="Crate side slat" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="1" unique_id=847592745]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, -0.22000003, 0.08000004, 0)
+
+[node name="Crate side slat_001" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="2" unique_id=2000640503]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0.21999979, 0.08000004, 0)
+
+[node name="Crate side slat_002" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="3" unique_id=1179146202]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, -0.22000003, 0.19, 0)
+
+[node name="Crate side slat_003" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="4" unique_id=1600525302]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0.21999979, 0.19, 0)
+
+[node name="Crate side slat_004" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="5" unique_id=1288428023]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, -0.22000003, 0.3, 0)
+
+[node name="Crate side slat_005" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="6" unique_id=2130259951]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0.21999979, 0.3, 0)
+
+[node name="Crate slat" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="7" unique_id=91867544]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0, 0.08000004, 0.18999958)
+
+[node name="Crate slat_001" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="8" unique_id=340980216]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 1.1920929e-07, 0.08000004, -0.18999994)
+
+[node name="Crate slat_002" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="9" unique_id=1439289548]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0, 0.19, 0.18999958)
+
+[node name="Crate slat_003" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="10" unique_id=1778599333]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 1.1920929e-07, 0.19, -0.18999994)
+
+[node name="Crate slat_004" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="11" unique_id=284389209]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0, 0.3, 0.18999958)
+
+[node name="Crate slat_005" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="12" unique_id=886538616]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 1.1920929e-07, 0.3, -0.18999994)
+
+[node name="Crate upright" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="13" unique_id=1988525724]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, -0.21999991, 0.19, 0.18999982)
+
+[node name="Crate upright_001" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="14" unique_id=1508946566]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, -0.22000003, 0.19, -0.18999994)
+
+[node name="Crate upright_002" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="15" unique_id=17769371]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0.22000015, 0.19, 0.18999958)
+
+[node name="Crate upright_003" parent="Record crate" parent_id_path=PackedInt32Array(1194676006) index="16" unique_id=1557098050]
+transform = Transform3D(0.99999994, 0, 7.450581e-09, 0, 1, 0, -7.450581e-09, 0, 0.99999994, 0.21999991, 0.19, -0.18999994)
+
+[node name="Cap_005" parent="Shelf apothecary bottle 4" parent_id_path=PackedInt32Array(303002804) index="1" unique_id=329046725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13, -2.9802322e-08)
+
+[node name="Neck_005" parent="Shelf apothecary bottle 4" parent_id_path=PackedInt32Array(303002804) index="2" unique_id=62050712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11749995, -2.9802322e-08)
+
+[node name="Paper label_005" parent="Shelf apothecary bottle 4" parent_id_path=PackedInt32Array(303002804) index="3" unique_id=790565511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.049999952, -2.9802322e-08)
+
+[node name="Shoulder_005" parent="Shelf apothecary bottle 4" parent_id_path=PackedInt32Array(303002804) index="4" unique_id=1227107195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09749997, -2.9802322e-08)
+
+[node name="Envelope" parent="Letter in envelope" parent_id_path=PackedInt32Array(656020887) index="0" unique_id=1798537795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 0, 0)
+
+[node name="Envelope seam" parent="Letter in envelope" parent_id_path=PackedInt32Array(656020887) index="1" unique_id=1220238623]
+transform = Transform3D(-0.6431923, 0.76570463, 0, 5.9604645e-08, 1.1920929e-07, -1, -0.76570463, -0.6431923, -1.1920929e-07, -0.037500024, 0.0009999871, 0.013499737)
+
+[node name="Envelope seam_001" parent="Letter in envelope" parent_id_path=PackedInt32Array(656020887) index="2" unique_id=1069250920]
+transform = Transform3D(0.64319205, 0.7657049, 0, -5.9604645e-08, 0, -1, -0.7657049, 0.64319205, 5.9604645e-08, 0.037499785, 0.0009999871, 0.013499975)
+
+[node name="Key shank" parent="House keys" parent_id_path=PackedInt32Array(693484276) index="0" unique_id=2004461639]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, -0.011999965, -0.0062939525, 0.039000273)
+
+[node name="Key shank_001" parent="House keys" parent_id_path=PackedInt32Array(693484276) index="1" unique_id=1860626281]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0.012000084, -0.0062939525, 0.039000273)
+
+[node name="Key teeth" parent="House keys" parent_id_path=PackedInt32Array(693484276) index="2" unique_id=107888266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0029997826, -0.0062939525, 0.059000015)
+
+[node name="Key teeth_001" parent="House keys" parent_id_path=PackedInt32Array(693484276) index="3" unique_id=1229250586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021000028, -0.0062939525, 0.059000254)
+
+[node name="Keyring" parent="House keys" parent_id_path=PackedInt32Array(693484276) index="4" unique_id=1490222571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, -0.0062939525, 0)
+
+[node name="Eyeglass frame" parent="Reading glasses" parent_id_path=PackedInt32Array(1763943489) index="1" unique_id=913763624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03399995, 0, -1.1920929e-07)
+
+[node name="Eyeglass frame_001" parent="Reading glasses" parent_id_path=PackedInt32Array(1763943489) index="2" unique_id=1374514661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03399998, 0, 1.1920929e-07)
+
+[node name="Folded temple" parent="Reading glasses" parent_id_path=PackedInt32Array(1763943489) index="3" unique_id=2061678657]
+transform = Transform3D(-0.32507995, 0.94568664, -8.940695e-08, -8.940697e-08, -1.1920929e-07, -1, -0.94568664, -0.32507992, 1.1920929e-07, -0.011999965, 0, -0.016499996)
+
+[node name="Pen" parent="Fountain pen" parent_id_path=PackedInt32Array(1569915816) index="0" unique_id=472402213]
+transform = Transform3D(-1.0000001, -8.940697e-08, -8.841488e-08, 8.841487e-08, 0, -1, 8.940697e-08, -1.0000001, 1.7763568e-15, 0, 0, -2.9802322e-08)
+
+[node name="Pen tip" parent="Fountain pen" parent_id_path=PackedInt32Array(1569915816) index="1" unique_id=582498310]
+transform = Transform3D(1.0000001, 0, 0, 0, 0, -1, 0, 1.0000001, 0, 0, 0, 0.07300004)
+
+[node name="Cardigan body" parent="Folded cardigan" parent_id_path=PackedInt32Array(58637401) index="0" unique_id=882461610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.9604645e-08)
+
+[node name="Folded sleeve" parent="Folded cardigan" parent_id_path=PackedInt32Array(58637401) index="1" unique_id=1402286246]
+transform = Transform3D(0.9780309, 0, -0.20845988, 0, 1, 0, 0.20845988, 0, 0.9780309, -0.14999986, 0.033000052, 0.040000007)
+
+[node name="Folded sleeve_001" parent="Folded cardigan" parent_id_path=PackedInt32Array(58637401) index="2" unique_id=1925105963]
+transform = Transform3D(0.97803104, 0, 0.20845988, 0, 1, 0, -0.20845988, 0, 0.97803104, 0.1500001, 0.033000052, 0.040000036)
+
+[node name="Ceiling rose" parent="Ceiling pendant" parent_id_path=PackedInt32Array(1928341819) index="0" unique_id=1248659409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.035, 2.9802322e-08)
+
+[node name="Opal shade" parent="Ceiling pendant" parent_id_path=PackedInt32Array(1928341819) index="1" unique_id=1549912220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.62, 2.9802322e-08)
+
+[node name="Pendant cable" parent="Ceiling pendant" parent_id_path=PackedInt32Array(1928341819) index="2" unique_id=1917517762]
+transform = Transform3D(-1, -8.7422784e-08, 0, 8.7422784e-08, -1, 0, 0, 0, 1, 0, 2.8600001, 2.9802322e-08)

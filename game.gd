@@ -73,7 +73,7 @@ func tune_materials(n: Node) -> void:
   for i in n.mesh.get_surface_count():
    var m = n.get_active_material(i)
    if m is BaseMaterial3D:
-    m.texture_filter=BaseMaterial3D.TEXTURE_FILTER_NEAREST;m.roughness=1.;m.metallic=0.;m.specular_mode=BaseMaterial3D.SPECULAR_DISABLED
+	m.texture_filter=BaseMaterial3D.TEXTURE_FILTER_NEAREST;m.roughness=1.;m.metallic=0.;m.specular_mode=BaseMaterial3D.SPECULAR_DISABLED
  for c in n.get_children():tune_materials(c)
 
 func material(color: String) -> StandardMaterial3D:
@@ -202,18 +202,18 @@ func interact(action: String) -> void:
  match action:
   "sofa":
    if step==1 and not moving_sofa:
-    moving_sofa=true;target=null;hint.text="";play_tone(95,.35)
-    if player.position.distance_to(sofa.position)<1.6:player.position=b(.65,-.25,.03)
-    var tw := create_tween();tw.set_trans(Tween.TRANS_SINE);tw.tween_property(sofa,"position",sofa.position+b(-.65,.62,0),1.35)
-    tw.tween_callback(func():step=2;moving_sofa=false;update_task())
+	moving_sofa=true;target=null;hint.text="";play_tone(95,.35)
+	if player.position.distance_to(sofa.position)<1.6:player.position=b(.65,-.25,.03)
+	var tw := create_tween();tw.set_trans(Tween.TRANS_SINE);tw.tween_property(sofa,"position",sofa.position+b(-.65,.62,0),1.35)
+	tw.tween_callback(func():step=2;moving_sofa=false;update_task())
   "remote":
    if step==2:
-    remote.hide();remote.collision_layer=0;step=3;play_tone(370,.10)
-    start_dialogue(["ВЫ|Нашёл. Только он не работает… Внутри нет батареек.","СОСЕД|В будильнике посмотри. Там вроде такие же. Только не сбей время."],"none");update_task()
+	remote.hide();remote.collision_layer=0;step=3;play_tone(370,.10)
+	start_dialogue(["ВЫ|Нашёл. Только он не работает… Внутри нет батареек.","СОСЕД|В будильнике посмотри. Там вроде такие же. Только не сбей время."],"none");update_task()
   "clock":
    if step==3:
-    step=4;play_tone(210,.16);update_task()
-    start_dialogue(["ВЫ|Две батарейки. Подойдут. Вставлю их в пульт.","ВЫ|Погоди… Я вынул обе. Почему будильник всё ещё идёт?"],"none")
+	step=4;play_tone(210,.16);update_task()
+	start_dialogue(["ВЫ|Две батарейки. Подойдут. Вставлю их в пульт.","ВЫ|Погоди… Я вынул обе. Почему будильник всё ещё идёт?"],"none")
    elif step>=4:start_dialogue(["ВЫ|Батареек нет. Но отсчёт продолжается."],"none")
    else:start_dialogue(["ВЫ|Будильник отсчитывает время. Лучше пока не трогать."],"none")
   "neighbor":
