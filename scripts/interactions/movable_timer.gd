@@ -1,15 +1,19 @@
 extends "res://scripts/interactions/movable.gd"
 
-@export var start_hours := 10
+signal finished
+
+@export var start_seconds := 36000
 
 @onready var _display: Label3D = $Display
 
 var _remaining_seconds: float
 var _dialogue_active := false
+var _finished := false
 
 
 func _ready() -> void:
-	_remaining_seconds = float(start_hours * 60 * 60)
+	add_to_group("timer")
+	_remaining_seconds = float(start_seconds)
 	_update_display()
 	_connect_dialogue.call_deferred()
 
@@ -33,10 +37,13 @@ func _on_dialogue_finished() -> void:
 
 
 func _process(delta: float) -> void:
-	if not _dialogue_active:
+	if not _dialogue_active or _finished:
 		return
 	_remaining_seconds = maxf(0.0, _remaining_seconds - delta)
 	_update_display()
+	if _remaining_seconds <= 0.0:
+		_finished = true
+		finished.emit()
 
 
 func _update_display() -> void:

@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://b2b501lo4h6ok" path="res://scripts/interactions/movable_timer.gd" id="5_timer"]
 [ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="6_1j3yi"]
 [ext_resource type="Script" uid="uid://dwov7qmqrjjh1" path="res://scripts/system/mesh_collision.gd" id="7_collision"]
+[ext_resource type="Script" path="res://scripts/ui/ending_screen.gd" id="8_ending"]
 
 [sub_resource type="Environment" id="Environment_5dla7"]
 background_mode = 1
@@ -143,6 +144,70 @@ metadata/_edit_use_anchors_ = true
 [node name="PauseMenu" parent="CharacterBody3D/Interface" unique_id=687930704 instance=ExtResource("4_c8h5o")]
 visible = false
 is_overlay = true
+
+[node name="EndingScreen" type="Control" parent="CharacterBody3D/Interface"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("8_ending")
+
+[node name="Backdrop" type="ColorRect" parent="CharacterBody3D/Interface/EndingScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Thanks" type="Label" parent="CharacterBody3D/Interface/EndingScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "thanks for your time"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="Button" parent="CharacterBody3D/Interface/EndingScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 230.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Quit"
+
+[node name="RestartButton" type="Button" parent="CharacterBody3D/Interface/EndingScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = 60.0
+offset_right = -10.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Restart"
 
 [node name="pers_anim" parent="." unique_id=1774098336 instance=ExtResource("2_47wem")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7138762, 0.5018285, -0.39224124)
