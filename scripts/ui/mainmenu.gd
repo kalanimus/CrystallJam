@@ -2,12 +2,9 @@ extends Control
 
 const GAME_SCENE := "res://node_3d.tscn"
 
-## When true this menu is a pause overlay inside the game scene instead of the
-## game's entry point. The primary button then reads "Continue" and resumes the
-## paused game.
 signal resume_requested
 
-@export var is_overlay: bool = false
+@export var is_overlay := false
 
 var _options_root: CenterContainer
 var _options_button: Button
@@ -41,7 +38,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 
-# Called by the game scene to show this menu as a pause overlay.
 func open_menu() -> void:
 	get_tree().paused = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
@@ -63,8 +59,6 @@ func _on_continue_pressed() -> void:
 		close_menu()
 	elif ResourceLoader.exists(GAME_SCENE):
 		get_tree().change_scene_to_file(GAME_SCENE)
-	else:
-		push_warning("Cannot start: '%s' does not exist yet." % GAME_SCENE)
 
 
 func _on_options_pressed() -> void:
@@ -79,19 +73,16 @@ func _on_exit_pressed() -> void:
 
 func _build_options_panel() -> void:
 	_options_root = CenterContainer.new()
-	_options_root.name = "OptionsPanel"
 	_options_root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_options_root.visible = false
 	add_child(_options_root)
 
 	var panel := PanelContainer.new()
 	_options_root.add_child(panel)
-
 	var margin := MarginContainer.new()
 	for side in ["left", "right", "top", "bottom"]:
 		margin.add_theme_constant_override("margin_" + side, 28)
 	panel.add_child(margin)
-
 	var vbox := VBoxContainer.new()
 	vbox.add_theme_constant_override("separation", 14)
 	margin.add_child(vbox)
@@ -104,7 +95,6 @@ func _build_options_panel() -> void:
 
 	_volume_label = Label.new()
 	vbox.add_child(_volume_label)
-
 	_volume_slider = HSlider.new()
 	_volume_slider.min_value = 0.0
 	_volume_slider.max_value = 100.0
@@ -124,7 +114,6 @@ func _build_options_panel() -> void:
 	var resolution_label := Label.new()
 	resolution_label.text = "Resolution"
 	vbox.add_child(resolution_label)
-
 	_resolution_option = OptionButton.new()
 	_populate_resolutions()
 	_resolution_option.item_selected.connect(_on_resolution_selected)
@@ -137,7 +126,6 @@ func _build_options_panel() -> void:
 
 
 func _populate_resolutions() -> void:
-	_resolution_option.clear()
 	for size in Settings.available_resolutions():
 		var index := _resolution_option.item_count
 		_resolution_option.add_item("%d x %d" % [size.x, size.y])

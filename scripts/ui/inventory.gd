@@ -4,11 +4,15 @@ const SLOT_COUNT := 10
 
 var active_slot := 0
 var slots: Array[Panel] = []
+var slot_labels: Array[Label] = []
+var items: Array = []
 
 
 func _ready() -> void:
+	add_to_group("inventory")
 	alignment = BoxContainer.ALIGNMENT_CENTER
 	add_theme_constant_override("separation", 6)
+	items.resize(SLOT_COUNT)
 
 	for index in SLOT_COUNT:
 		var slot := Panel.new()
@@ -25,16 +29,9 @@ func _ready() -> void:
 		slot.add_child(number)
 		add_child(slot)
 		slots.append(slot)
+		slot_labels.append(number)
 
 	_update_slot_visuals()
-
-
-func _on_dialogue_started() -> void:
-	hide()
-
-
-func _on_dialogue_finished() -> void:
-	show()
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -47,14 +44,55 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 
 
+func _on_dialogue_started() -> void:
+	hide()
+
+
+func _on_dialogue_finished() -> void:
+	show()
+
+
 func _set_active_slot(new_slot: int) -> void:
 	active_slot = new_slot
 	_update_slot_visuals()
 	print("Активный слот: %d" % (active_slot + 1))
 
 
+func add_item(item: RigidBody3D) -> bool:
+	var free_slot := items.find(null)
+	if free_slot == -1:
+		print("Инвентарь заполнен")
+		return false
+
+	items[free_slot] = item
+	item.store_in_inventory(self)
+	_update_slot_visuals()
+	return true
+
+
+func use_active_item() -> void:
+	var item = items[active_slot]
+	if item and item.has_method("use_from_inventory"):
+		item.use_from_inventory()
+
+
+func drop_active_item(player: CharacterBody3D) -> void:
+	var item = items[active_slot]
+	if item == null:
+		return
+
+	var camera: Camera3D = player.get_node("Head/Camera3D")
+	var direction: Vector3 = player.get_camera_forward()
+	var drop_position: Vector3 = camera.global_position + direction * 1.2
+	items[active_slot] = null
+	item.drop_from_inventory(get_tree().current_scene, drop_position, direction)
+	_update_slot_visuals()
+
+
 func _update_slot_visuals() -> void:
 	for index in slots.size():
+		var item = items[index]
+		slot_labels[index].text = str(index + 1) if item == null else "%d\n%s" % [index + 1, item.item_name]
 		slots[index].add_theme_stylebox_override(
 			"panel", _make_slot_style(index == active_slot)
 		)

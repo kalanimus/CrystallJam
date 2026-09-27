@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b88wcnwe7u8vv"]
 
-[ext_resource type="Script" uid="uid://c20683xxwrjqk" path="res://dialogue_test.gd" id="1_demo"]
+[ext_resource type="Script" uid="uid://c20683xxwrjqk" path="res://scripts/ui/dialogue_test.gd" id="1_demo"]
 [ext_resource type="PackedScene" path="res://lower_third.tscn" id="2_lower"]
 
 [node name="DialogueTest" type="Control" unique_id=1276955496]

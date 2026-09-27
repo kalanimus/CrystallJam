@@ -4,6 +4,7 @@ extends CharacterBody3D
 @export var mouse_sensitivity: float = 0.002
 
 var _movement_locked: bool = false
+var _held_object: Node
 
 @onready var head: Node3D = $Head
 @onready var interaction_ray: RayCast3D = $Head/Camera3D/RayCast3D
@@ -28,13 +29,19 @@ func _unhandled_input(event):
 		)
 	if event.is_action_pressed("interact") and not _movement_locked:
 		try_interact()
+	if event.is_action_released("interact"):
+		_release_held_object()
+	if not _movement_locked and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		_get_inventory().use_active_item()
+	if not _movement_locked and event is InputEventKey and event.pressed and event.physical_keycode == KEY_Q:
+		_get_inventory().drop_active_item(self)
 	if event.is_action_pressed("ui_cancel"):
 		_open_pause_menu()
 
 
-# Disables player control while a dialogue (or other blocking UI) is active.
 func lock_movement() -> void:
 	_movement_locked = true
+	_release_held_object()
 
 
 func unlock_movement() -> void:
@@ -51,11 +58,34 @@ func _open_pause_menu() -> void:
 
 
 func try_interact():
+	if is_instance_valid(_held_object):
+		if _held_object.has_method("is_being_held") and not _held_object.is_being_held():
+			_held_object = null
+		else:
+			return
+
 	if interaction_ray.is_colliding():
 		var object = interaction_ray.get_collider()
 
-		if object.has_method("interact"):
-			object.interact()
+		if object.has_method("begin_hold"):
+			object.begin_hold(self)
+			_held_object = object
+		elif object.has_method("interact"):
+			object.interact(self)
+
+
+func _release_held_object() -> void:
+	if is_instance_valid(_held_object) and _held_object.has_method("release_hold"):
+		_held_object.release_hold()
+	_held_object = null
+
+
+func get_camera_forward() -> Vector3:
+	return -$Head/Camera3D.global_transform.basis.z
+
+
+func _get_inventory():
+	return get_tree().get_first_node_in_group("inventory")
 
 
 func _physics_process(delta):

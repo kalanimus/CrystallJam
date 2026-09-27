@@ -6,11 +6,7 @@ const LINES := [
 	{"speaker": "Narrator", "text": "You wake in a room that looks like yours, yet something is [i]wrong[/i]."},
 	{"speaker": "You", "text": "[b]Where am I?[/b] This doesn't make sense."},
 	{"speaker": "???", "text": "You can run... but you can never escape [shake rate=20 level=8]yourself[/shake]."},
-	{"speaker": "SAM", "text": "Hello. I am Software Automatic Mouth. I can speak any text you give me."},
-	{"speaker": "Narrator", "text": "Rich text works too: [color=gold]gold[/color], [wave]wavy[/wave], and [rainbow]colors[/rainbow]."},
 ]
-
-const END_LINE := {"speaker": "", "text": "[center]— end of demo —[/center]"}
 
 signal dialogue_started
 signal dialogue_finished
@@ -18,36 +14,36 @@ signal dialogue_finished
 @onready var _lower_third: LowerThird = $LowerThird
 @onready var _voice_toggle: CheckBox = $TopBar/VoiceToggle
 
-var _engaged: bool = false
-var _finished: bool = false
-var _connected: bool = false
+var _engaged := false
+var _finished := false
 
 
 func _ready() -> void:
+	add_to_group("dialogue")
+	$TopBar.hide()
 	hide()
-
-
-func _on_interactive_cube_my_custom_signal() -> void:
-	if not _connected:
-		_connected = true
-		$TopBar/Back.pressed.connect(_on_back_pressed)
-		$TopBar/Replay.pressed.connect(_on_replay_pressed)
-		_voice_toggle.toggled.connect(_on_voice_toggled)
-		_lower_third.queue_finished.connect(_on_queue_finished)
+	$TopBar/Back.pressed.connect(_on_back_pressed)
+	$TopBar/Replay.pressed.connect(_on_replay_pressed)
+	_voice_toggle.toggled.connect(_on_voice_toggled)
+	_lower_third.queue_finished.connect(_on_queue_finished)
 	_lower_third.voice_enabled = _voice_toggle.button_pressed
-	_start_dialogue()
 
 
-func _start_dialogue() -> void:
+func show_text(text: String, speaker: String = "") -> void:
 	_engaged = true
 	_finished = false
 	show()
 	dialogue_started.emit()
-	_lower_third.queue_lines(LINES + [END_LINE])
+	_lower_third.voice_enabled = _voice_toggle.button_pressed
+	_lower_third.show_line(text, speaker)
 
 
-func _advance_dialogue() -> void:
-	_lower_third.advance()
+func start_demo() -> void:
+	_engaged = true
+	_finished = false
+	show()
+	dialogue_started.emit()
+	_lower_third.queue_lines(LINES)
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -57,11 +53,14 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		advance = true
 	if advance:
-		_advance_dialogue()
+		_lower_third.advance()
 		get_viewport().set_input_as_handled()
 
 
 func _on_queue_finished() -> void:
+	if not _engaged:
+		return
+	_engaged = false
 	_finished = true
 	dialogue_finished.emit()
 	hide()
@@ -74,8 +73,7 @@ func _on_voice_toggled(pressed: bool) -> void:
 
 
 func _on_replay_pressed() -> void:
-	_lower_third.voice_enabled = _voice_toggle.button_pressed
-	_start_dialogue()
+	start_demo()
 
 
 func _on_back_pressed() -> void:

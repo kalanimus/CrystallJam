@@ -122,12 +122,6 @@ func _show_next() -> void:
 	_display(line.get("text", ""), line.get("speaker", ""))
 
 
-# Hides the dialogue box once there is nothing left to display.
-func _hide_if_idle() -> void:
-	if _queue.is_empty() and not _revealing:
-		hide()
-
-
 func _complete_reveal() -> void:
 	_revealing = false
 	set_process(false)
@@ -135,6 +129,11 @@ func _complete_reveal() -> void:
 	reveal_finished.emit()
 	line_finished.emit(_current_speaker, _text.get_parsed_text())
 	if auto_hide_when_done and _queue.is_empty():
+		hide()
+
+
+func _hide_if_idle() -> void:
+	if _queue.is_empty() and not _revealing:
 		hide()
 
 
