@@ -11,8 +11,6 @@ size = Vector3(10, 1, 10)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dqqax"]
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_dqqax"]
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqqax"]
 radius = 0.25
 height = 0.5
@@ -48,11 +46,6 @@ shape = SubResource("BoxShape3D_wcb3r")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/StaticBody3D/CollisionShape3D" unique_id=1831768278]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008743048, -0.0063841343, -0.0074931383)
 mesh = SubResource("BoxMesh_dqqax")
-
-[node name="JustObject" type="MeshInstance3D" parent="." unique_id=1307169475]
-physics_interpolation_mode = 1
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0900755, 1.4790027, -2.4426494)
-mesh = SubResource("CylinderMesh_dqqax")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1181344834]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7538943, 1.5048786)
