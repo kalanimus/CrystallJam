@@ -1,11 +1,10 @@
 extends Control
 
 const GAME_SCENE := "res://node_3d.tscn"
-const VOICE_TEST_SCENE := "res://gdsam_test.tscn"
-const DIALOGUE_TEST_SCENE := "res://dialogue_test.tscn"
 
 ## When true this menu is a pause overlay inside the game scene instead of the
-## game's entry point. "Continue" then resumes the paused game.
+## game's entry point. The primary button then reads "Continue" and resumes the
+## paused game.
 signal resume_requested
 
 @export var is_overlay: bool = false
@@ -22,13 +21,13 @@ func _ready() -> void:
 	if is_overlay:
 		process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 		add_to_group("pause_menu")
-	$CenterContainer/Menu/ContinueButton.pressed.connect(_on_continue_pressed)
+	var primary_button: Button = $CenterContainer/Menu/ContinueButton
+	primary_button.text = "Continue" if is_overlay else "Start"
+	primary_button.pressed.connect(_on_continue_pressed)
 	$CenterContainer/Menu/OptionsButton.pressed.connect(_on_options_pressed)
-	$CenterContainer/Menu/VoiceTestButton.pressed.connect(_on_voice_test_pressed)
-	$CenterContainer/Menu/DialogueTestButton.pressed.connect(_on_dialogue_test_pressed)
 	$CenterContainer/Menu/ExitButton.pressed.connect(_on_exit_pressed)
 	_build_options_panel()
-	$CenterContainer/Menu/ContinueButton.grab_focus()
+	primary_button.grab_focus()
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -65,23 +64,13 @@ func _on_continue_pressed() -> void:
 	elif ResourceLoader.exists(GAME_SCENE):
 		get_tree().change_scene_to_file(GAME_SCENE)
 	else:
-		push_warning("Continue pressed, but '%s' does not exist yet." % GAME_SCENE)
+		push_warning("Cannot start: '%s' does not exist yet." % GAME_SCENE)
 
 
 func _on_options_pressed() -> void:
 	$CenterContainer.hide()
 	_options_root.show()
 	_options_button.grab_focus()
-
-
-func _on_voice_test_pressed() -> void:
-	get_tree().paused = false
-	get_tree().change_scene_to_file(VOICE_TEST_SCENE)
-
-
-func _on_dialogue_test_pressed() -> void:
-	get_tree().paused = false
-	get_tree().change_scene_to_file(DIALOGUE_TEST_SCENE)
 
 
 func _on_exit_pressed() -> void:
