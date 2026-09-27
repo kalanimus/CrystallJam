@@ -30,13 +30,18 @@ var _revealing: bool = false
 var _reveal_progress: float = 0.0
 var _reveal_target: int = 0
 var _current_speaker: String = ""
+var _use_web_tts: bool = OS.has_feature("web")
+var _web_synth
 
 
 func _ready() -> void:
 	set_process(false)
 	hide()
-	_gdsam.set_audio_stream_callback(_stream_from_buffer)
-	_apply_voice_preset()
+	if _use_web_tts:
+		_web_synth = JavaScriptBridge.get_interface("speechSynthesis")
+	else:
+		_gdsam.set_audio_stream_callback(_stream_from_buffer)
+		_apply_voice_preset()
 	Settings.tts_changed.connect(_on_tts_changed)
 	if not initial_text.is_empty():
 		show_line(initial_text, initial_speaker)
@@ -90,10 +95,16 @@ func is_revealing() -> bool:
 
 
 func is_speaking() -> bool:
+	if _use_web_tts:
+		return _web_synth != null and bool(_web_synth.speaking)
 	return _gdsam.is_playing()
 
 
 func stop_voice() -> void:
+	if _use_web_tts:
+		if _web_synth != null:
+			_web_synth.cancel()
+		return
 	_gdsam.interrupt()
 
 
@@ -148,11 +159,50 @@ func _speak(text: String) -> void:
 		phrase = text.strip_edges()
 	if phrase.is_empty():
 		return
+	if _use_web_tts:
+		_speak_web(phrase)
+		return
 	_gdsam.interrupt()
 	_gdsam.speak(_player, phrase)
 
 
+func _speak_web(phrase: String) -> void:
+	if _web_synth == null:
+		return
+	_web_synth.cancel()
+	var utterance = JavaScriptBridge.create_object("SpeechSynthesisUtterance", phrase)
+	utterance.lang = "ru-RU" if _has_cyrillic(phrase) else "en-US"
+	var params := _web_voice_params()
+	utterance.rate = params.rate
+	utterance.pitch = params.pitch
+	_web_synth.speak(utterance)
+
+
+func _web_voice_params() -> Dictionary:
+	match voice_preset:
+		1:
+			return {"rate": 1.0, "pitch": 1.4}
+		2:
+			return {"rate": 0.7, "pitch": 0.4}
+		3:
+			return {"rate": 1.1, "pitch": 0.8}
+		4:
+			return {"rate": 0.9, "pitch": 0.3}
+		_:
+			return {"rate": 1.0, "pitch": 1.0}
+
+
+func _has_cyrillic(text: String) -> bool:
+	for index in text.length():
+		var code := text.unicode_at(index)
+		if code >= 0x0400 and code <= 0x04FF:
+			return true
+	return false
+
+
 func _apply_voice_preset() -> void:
+	if _use_web_tts:
+		return
 	match voice_preset:
 		1:
 			_gdsam.set_voice_elf()

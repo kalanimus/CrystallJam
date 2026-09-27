@@ -8,6 +8,7 @@ var _held_object: Node
 
 @onready var head: Node3D = $Head
 @onready var interaction_ray: RayCast3D = $Head/Camera3D/RayCast3D
+@onready var interaction_prompt: Label = $Interface/Control/InteractionPrompt
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -27,7 +28,7 @@ func _unhandled_input(event):
 			deg_to_rad(-89),
 			deg_to_rad(89)
 		)
-	if event.is_action_pressed("interact") and not _movement_locked:
+	if event.is_action_pressed("interact") and not _movement_locked and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		try_interact()
 	if event.is_action_released("interact"):
 		_release_held_object()
@@ -81,7 +82,23 @@ func get_camera_forward() -> Vector3:
 	return -$Head/Camera3D.global_transform.basis.z
 
 
+func _update_interaction_prompt() -> void:
+	var text := ""
+	if not _movement_locked and interaction_ray.is_colliding():
+		var object = interaction_ray.get_collider()
+		if object and "prompt" in object:
+			text = object.prompt
+
+	if text.is_empty():
+		interaction_prompt.hide()
+	else:
+		interaction_prompt.text = "[ЛКМ] %s" % text
+		interaction_prompt.show()
+
+
 func _physics_process(delta):
+	_update_interaction_prompt()
+
 	var input_dir := Vector2.ZERO
 	if not _movement_locked:
 		input_dir = Input.get_vector(
