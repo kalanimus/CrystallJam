@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://18rv4174bknh" path="res://moving.gd" id="1_a202f"]
 [ext_resource type="Script" uid="uid://cydepimyhex71" path="res://interactable.gd" id="2_noarx"]
+[ext_resource type="Script" uid="uid://cnb4mvhjqnma0" path="res://inventory.gd" id="3_inventory"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -170,3 +171,18 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 0.9)
+
+[node name="Inventory" type="HBoxContainer" parent="Interface" unique_id=926714679]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -287.0
+offset_top = -76.0
+offset_right = 287.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("3_inventory")
