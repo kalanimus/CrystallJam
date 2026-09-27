@@ -6,6 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="4_c8h5o"]
 [ext_resource type="Script" uid="uid://bn8fbc6y0d3cv" path="res://scripts/interactions/npc_dialogue.gd" id="5_npc"]
 
+[sub_resource type="Environment" id="Environment_5dla7"]
+background_mode = 1
+background_color = Color(1, 0, 0, 1)
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_47wem"]
 radius = 0.25
 height = 1.594635
@@ -13,9 +17,6 @@ height = 1.594635
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_wgn6i"]
 radius = 0.25
 height = 0.5
-
-[sub_resource type="Environment" id="Environment_va83t"]
-background_mode = 2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_npc"]
 radius = 0.8
@@ -41,6 +42,9 @@ edge_fade = 0.2143547
 
 [node name="CrazyRoom" type="Node3D" unique_id=408262479]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1212866613]
+environment = SubResource("Environment_5dla7")
+
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=556220393]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25308168, 1.8182173, 1.5453432)
 script = ExtResource("1_u3233")
@@ -57,7 +61,6 @@ mesh = SubResource("CapsuleMesh_wgn6i")
 [node name="Head" type="Node3D" parent="CharacterBody3D" unique_id=1586531511]
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" unique_id=1619520180]
-environment = SubResource("Environment_va83t")
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Head/Camera3D" unique_id=1308787295]
 target_position = Vector3(0, 0, -1.5)
@@ -96,7 +99,7 @@ mouse_filter = 2
 color = Color(1, 1, 1, 0.9)
 metadata/_edit_use_anchors_ = true
 
-[node name="InteractionPrompt" type="Label" parent="CharacterBody3D/Interface/Control"]
+[node name="InteractionPrompt" type="Label" parent="CharacterBody3D/Interface/Control" unique_id=1038666571]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -110,7 +113,6 @@ offset_right = 150.0
 offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 theme_override_colors/font_color = Color(1, 1, 1, 0.9)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
 theme_override_constants/outline_size = 4
@@ -168,4 +170,4 @@ spot_angle = 22.646227
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1783358802]
 transform = Transform3D(1, 0, 0, 0, 0.7912193, 0.6115325, 0, -0.6115325, 0.7912193, 0, 2.8851447, 0)
-light_energy = 0.005
+light_energy = 0.0
