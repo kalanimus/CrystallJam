@@ -5,9 +5,21 @@
 [ext_resource type="PackedScene" uid="uid://b88wcnwe7u8vv" path="res://dialogue_test.tscn" id="2_duj04"]
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="4_c8h5o"]
 [ext_resource type="Script" uid="uid://bn8fbc6y0d3cv" path="res://scripts/interactions/npc_dialogue.gd" id="5_npc"]
+[ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="6_1j3yi"]
 
 [sub_resource type="Environment" id="Environment_5dla7"]
 background_mode = 1
+background_color = Color(0.09019608, 0.09019608, 0.09019608, 1)
+ambient_light_color = Color(0.8992584, 0.8992584, 0.8992584, 1)
+ambient_light_energy = 7.46
+fog_enabled = true
+
+[sub_resource type="FogMaterial" id="FogMaterial_5dla7"]
+density = 5.2364
+albedo = Color(0.71682894, 0.16043514, 0.29604453, 1)
+emission = Color(0.6682802, 0.25292364, 0.3905607, 1)
+height_falloff = 10.067022
+edge_fade = 0.8876556
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_47wem"]
 radius = 0.25
@@ -21,23 +33,10 @@ height = 0.5
 radius = 0.8
 height = 1.8
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_wgn6i"]
-size = Vector3(8, 1, 8)
-
-[sub_resource type="BoxMesh" id="BoxMesh_duj04"]
-size = Vector3(8, 1, 8)
-
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_duj04"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_va83t"]
-size = Vector3(5, 1, 5)
-
-[sub_resource type="FogMaterial" id="FogMaterial_5dla7"]
-density = 5.2364
-albedo = Color(0.33660764, 0.3366076, 0.3366076, 1)
-emission = Color(1, 1, 1, 1)
-height_falloff = 1.1341147
-edge_fade = 0.2143547
+[sub_resource type="BoxShape3D" id="BoxShape3D_wgn6i"]
+size = Vector3(2, 0.37457275, 7.905365)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ltkp5"]
 transparency = 1
@@ -55,8 +54,13 @@ data = PackedVector3Array(-1.2789, 0.77279997, 0.6602, 1.2789, 0.77279997, 0.660
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1212866613]
 environment = SubResource("Environment_5dla7")
 
+[node name="FogVolume" type="FogVolume" parent="WorldEnvironment" unique_id=1372211633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4890747, 0.18835449)
+size = Vector3(11.908203, 3.8218994, 7.8737793)
+material = SubResource("FogMaterial_5dla7")
+
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=556220393]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25308168, 1.8182173, 1.5453432)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25308168, 2.1714633, 1.5453432)
 script = ExtResource("1_u3233")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1807917563]
@@ -146,29 +150,13 @@ script = ExtResource("5_npc")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pers_anim/TalkTarget" unique_id=25247918]
 shape = SubResource("CapsuleShape3D_npc")
 
-[node name="Area3D" type="Area3D" parent="." unique_id=339165968]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=307330042]
-physics_interpolation_mode = 2
-shape = SubResource("BoxShape3D_wgn6i")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D" unique_id=128841635]
-mesh = SubResource("BoxMesh_duj04")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Area3D" unique_id=206529391]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=206529391]
 physics_material_override = SubResource("PhysicsMaterial_duj04")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D/StaticBody3D" unique_id=1853188855]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1853188855]
 physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05472564, 0.3192835, 0.22295558)
 shape = SubResource("BoxShape3D_wgn6i")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/StaticBody3D/CollisionShape3D" unique_id=1138392545]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008743048, -0.0063841343, -0.0074931383)
-mesh = SubResource("BoxMesh_va83t")
-
-[node name="FogVolume" type="FogVolume" parent="." unique_id=1372211633]
-size = Vector3(11.908203, 6.6083984, 15.566406)
-material = SubResource("FogMaterial_5dla7")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1946247087]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 3.902839, 0)
@@ -178,10 +166,6 @@ spot_angle = 22.646227
 transform = Transform3D(1, 0, 0, 0, -0.5034753, -0.8640097, 0, 0.8640097, -0.5034753, 0.18661392, -1.5645212, -3.2591507)
 spot_angle = 22.646227
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1783358802]
-transform = Transform3D(1, 0, 0, 0, 0.7912193, 0.6115325, 0, -0.6115325, 0.7912193, 0, 2.8851447, 0)
-light_energy = 0.0
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1607025521]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2180801, 1.2915328, -0.33612874)
 mesh = SubResource("BoxMesh_1j3yi")
@@ -190,3 +174,6 @@ mesh = SubResource("BoxMesh_1j3yi")
 
 [node name="_CollisionShape3D_171014" type="CollisionShape3D" parent="MeshInstance3D/GeneratedTrimeshCollision" unique_id=722433663]
 shape = SubResource("ConcavePolygonShape3D_c8h5o")
+
+[node name="room" parent="." unique_id=1854311196 instance=ExtResource("6_1j3yi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17813993, 0.4956547, 0.24105263)
