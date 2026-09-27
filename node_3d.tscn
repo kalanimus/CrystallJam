@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b88wcnwe7u8vv" path="res://dialogue_test.tscn" id="3_a0tk4"]
 [ext_resource type="Script" uid="uid://cnb4mvhjqnma0" path="res://inventory.gd" id="3_inventory"]
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="4_menu"]
+[ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="6_i5arm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -16,7 +17,7 @@ size = Vector3(10, 1, 10)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqqax"]
 radius = 0.25
-height = 0.5
+height = 1.7033691
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_wcb3r"]
 radius = 0.25
@@ -88,11 +89,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008743048, -0.0063841343, -
 mesh = SubResource("BoxMesh_dqqax")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1181344834]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7538943, 1.5048786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7651979, 1.9538476, 0.1581428)
 script = ExtResource("1_a202f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=390289250]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.003984213, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.59770036, 0)
 shape = SubResource("CapsuleShape3D_dqqax")
 debug_color = Color(0.1764706, 0.5176471, 1, 1)
 
@@ -105,11 +106,6 @@ mesh = SubResource("CapsuleMesh_wcb3r")
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Head/Camera3D" unique_id=628605354]
 target_position = Vector3(0, 0, -3)
-
-[node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=1516191716]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92098165, 2.2294493, 2.2034116)
-light_energy = 4.864
-area_size = Vector2(1, 1.1419287)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=986699429]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83691716, -1.4305907)
@@ -147,12 +143,20 @@ mesh = SubResource("CylinderMesh_interactive")
 shape = SubResource("CylinderShape_interactive")
 
 [node name="InteractiveCube" type="RigidBody3D" parent="." unique_id=67332260]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82, -2.15)
+transform = Transform3D(6.5654564, 0, 0, 0, 3.961522, 0, 0, 0, 1, 0.21004058, 1.5811216, -0.89231855)
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+gravity_scale = 0.0
 script = ExtResource("2_noarx")
 display_name = "куб"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveCube" unique_id=506466974]
 material_override = SubResource("Material_cube")
+transparency = 1.0
 mesh = SubResource("BoxMesh_interactive")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractiveCube" unique_id=231197853]
@@ -207,8 +211,20 @@ script = ExtResource("3_inventory")
 visible = false
 is_overlay = true
 
+[node name="ROOM 1987 | The familiar room" parent="." unique_id=176349704 instance=ExtResource("6_i5arm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.84416056, 0.42219555, 1.2037559)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=272714595]
+transform = Transform3D(1, 0, 0, 0, -0.02308442, 0.9997335, 0, -0.9997335, -0.02308442, -0.9375671, 2.99836, 1.071728)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=291804066]
+transform = Transform3D(1, 0, 0, 0, 0.006830331, 0.9999768, 0, -0.9999768, 0.006830331, 1.9392004, 2.3992965, 3.0396416)
+
+[node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=588944958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.567214, -0.785388)
+
 [connection signal="my_custom_signal" from="InteractiveCube" to="Interface/Control/DialogueTest" method="_on_interactive_cube_my_custom_signal"]
-[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="lock_movement"]
 [connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="unlock_movement"]
-[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_started"]
 [connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_finished"]
+[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="lock_movement"]
+[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_started"]
