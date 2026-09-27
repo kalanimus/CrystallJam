@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://cvyw43rbl3tnc"]
+
+[ext_resource type="Script" uid="uid://18rv4174bknh" path="res://moving.gd" id="1_a202f"]
+[ext_resource type="Script" uid="uid://cydepimyhex71" path="res://interactable.gd" id="2_noarx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dqqax"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dqqax"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dqqax"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqqax"]
+radius = 0.25
+height = 0.5
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_wcb3r"]
+radius = 0.25
+height = 0.5
+
+[sub_resource type="PrismMesh" id="PrismMesh_1ifcq"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2h66b"]
+size = Vector3(0.15, 0.15, 0.15)
+
+[node name="Node3D" type="Node3D" unique_id=1589633361]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=168477728]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1030562892]
+physics_interpolation_mode = 2
+shape = SubResource("BoxShape3D_wcb3r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D" unique_id=896303204]
+mesh = SubResource("BoxMesh_dqqax")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Area3D" unique_id=1497611588]
+physics_material_override = SubResource("PhysicsMaterial_dqqax")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D/StaticBody3D" unique_id=668597168]
+physics_interpolation_mode = 2
+shape = SubResource("BoxShape3D_wcb3r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/StaticBody3D/CollisionShape3D" unique_id=1831768278]
+mesh = SubResource("BoxMesh_dqqax")
+
+[node name="JustObject" type="MeshInstance3D" parent="." unique_id=1307169475]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0900755, 1.4790027, -2.4426494)
+mesh = SubResource("CylinderMesh_dqqax")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1181344834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7538943, 1.5048786)
+script = ExtResource("1_a202f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=390289250]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.003984213, 0)
+shape = SubResource("CapsuleShape3D_dqqax")
+debug_color = Color(0.1764706, 0.5176471, 1, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1994104669]
+mesh = SubResource("CapsuleMesh_wcb3r")
+
+[node name="Head" type="Node3D" parent="CharacterBody3D" unique_id=1142363102]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" unique_id=15145434]
+
+[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Head/Camera3D" unique_id=628605354]
+target_position = Vector3(0, 0, -3)
+
+[node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=1516191716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92098165, 2.2294493, 2.2034116)
+light_energy = 4.864
+area_size = Vector2(1, 1.1419287)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1730021922]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83691716, -1.4305907)
+script = ExtResource("2_noarx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1671210099]
+mesh = SubResource("PrismMesh_1ifcq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1274517323]
+shape = SubResource("BoxShape3D_2h66b")
