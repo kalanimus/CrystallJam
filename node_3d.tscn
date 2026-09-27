@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cvyw43rbl3tnc"]
 
 [ext_resource type="Script" uid="uid://18rv4174bknh" path="res://scripts/player/moving.gd" id="1_a202f"]
-[ext_resource type="Script" uid="uid://cydepimyhex71" path="res://scripts/interactions/interactable.gd" id="2_noarx"]
 [ext_resource type="PackedScene" uid="uid://b88wcnwe7u8vv" path="res://dialogue_test.tscn" id="3_a0tk4"]
 [ext_resource type="Script" uid="uid://cnb4mvhjqnma0" path="res://scripts/ui/inventory.gd" id="3_inventory"]
 [ext_resource type="Script" uid="uid://vyut0tfaoiqb" path="res://scripts/interactions/pickup.gd" id="4_pickup"]
 [ext_resource type="Script" uid="uid://dfcnsvjt7xjms" path="res://scripts/interactions/movable.gd" id="5_movable"]
 [ext_resource type="Script" uid="uid://gxm6gtuexg4l" path="res://scripts/interactions/dialogue_interactable.gd" id="6_dialogue"]
+[ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="7_menu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -23,12 +23,6 @@ height = 0.5
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_wcb3r"]
 radius = 0.25
 height = 0.5
-
-[sub_resource type="PrismMesh" id="PrismMesh_1ifcq"]
-size = Vector3(0.1, 0.1, 0.1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_2h66b"]
-size = Vector3(0.15, 0.15, 0.15)
 
 [sub_resource type="StandardMaterial3D" id="Material_sphere"]
 albedo_color = Color(0.2, 0.65, 1, 1)
@@ -113,16 +107,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92098165, 2.2294493, 2.2034
 light_energy = 4.864
 area_size = Vector2(1, 1.1419287)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=986699429]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83691716, -1.4305907)
-script = ExtResource("2_noarx")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1671210099]
-mesh = SubResource("PrismMesh_1ifcq")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1274517323]
-shape = SubResource("BoxShape3D_2h66b")
-
 [node name="InteractiveSphere" type="RigidBody3D" parent="." unique_id=1716619464]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 0.83, -1.8)
 script = ExtResource("4_pickup")
@@ -136,6 +120,7 @@ shape = SubResource("SphereShape_interactive")
 
 [node name="InteractiveCylinder" type="RigidBody3D" parent="." unique_id=1703705330]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0.83, -1.8)
+mass = 0.343
 script = ExtResource("5_movable")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveCylinder" unique_id=946971636]
@@ -212,3 +197,12 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 script = ExtResource("3_inventory")
+
+[node name="PauseMenu" parent="Interface" unique_id=1740325591 instance=ExtResource("7_menu")]
+visible = false
+is_overlay = true
+
+[connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="unlock_movement"]
+[connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_finished"]
+[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="lock_movement"]
+[connection signal="dialogue_started" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_started"]

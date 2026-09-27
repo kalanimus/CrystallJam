@@ -43,7 +43,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(0, 28)
 layout_mode = 2
 
-[node name="StartButton" type="Button" parent="CenterContainer/Menu" unique_id=738402768]
+[node name="ContinueButton" type="Button" parent="CenterContainer/Menu" unique_id=738402768]
 custom_minimum_size = Vector2(240, 46)
 layout_mode = 2
 text = "Start"
@@ -52,16 +52,6 @@ text = "Start"
 custom_minimum_size = Vector2(240, 46)
 layout_mode = 2
 text = "Options"
-
-[node name="VoiceTestButton" type="Button" parent="CenterContainer/Menu" unique_id=1693430057]
-custom_minimum_size = Vector2(240, 46)
-layout_mode = 2
-text = "Voice Test"
-
-[node name="DialogueTestButton" type="Button" parent="CenterContainer/Menu" unique_id=1018998529]
-custom_minimum_size = Vector2(240, 46)
-layout_mode = 2
-text = "Dialogue Test"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/Menu" unique_id=1957680048]
 custom_minimum_size = Vector2(240, 46)
