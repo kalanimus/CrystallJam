@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cydepimyhex71" path="res://interactable.gd" id="2_noarx"]
 [ext_resource type="PackedScene" uid="uid://b88wcnwe7u8vv" path="res://dialogue_test.tscn" id="3_a0tk4"]
 [ext_resource type="Script" uid="uid://cnb4mvhjqnma0" path="res://inventory.gd" id="3_inventory"]
+[ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="4_menu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -138,6 +139,7 @@ script = ExtResource("2_noarx")
 display_name = "цилиндр"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="InteractiveCylinder" unique_id=946971636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05801654, -0.01670909, 0.10797942)
 material_override = SubResource("Material_cylinder")
 mesh = SubResource("CylinderMesh_interactive")
 
@@ -186,7 +188,6 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 0.9)
 
-[connection signal="my_custom_signal" from="InteractiveCube" to="Interface/Control/DialogueTest" method="_on_interactive_cube_my_custom_signal"]
 [node name="Inventory" type="HBoxContainer" parent="Interface" unique_id=926714679]
 anchors_preset = 7
 anchor_left = 0.5
@@ -201,3 +202,9 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 script = ExtResource("3_inventory")
+
+[node name="PauseMenu" parent="Interface" unique_id=1740325591 instance=ExtResource("4_menu")]
+visible = false
+is_overlay = true
+
+[connection signal="my_custom_signal" from="InteractiveCube" to="Interface/Control/DialogueTest" method="_on_interactive_cube_my_custom_signal"]

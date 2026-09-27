@@ -36,6 +36,7 @@ func _ready() -> void:
 	set_process(false)
 	_gdsam.set_audio_stream_callback(_stream_from_buffer)
 	_apply_voice_preset()
+	Settings.tts_changed.connect(_on_tts_changed)
 	if not initial_text.is_empty():
 		show_line(initial_text, initial_speaker)
 
@@ -106,7 +107,7 @@ func _display(text: String, speaker: String) -> void:
 	show()
 	set_process(true)
 	reveal_started.emit()
-	if voice_enabled:
+	if voice_enabled and Settings.tts_enabled:
 		_speak(text)
 
 
@@ -126,6 +127,11 @@ func _complete_reveal() -> void:
 	line_finished.emit(_current_speaker, _text.get_parsed_text())
 	if auto_hide_when_done and _queue.is_empty():
 		hide()
+
+
+func _on_tts_changed(enabled: bool) -> void:
+	if not enabled:
+		stop_voice()
 
 
 func _speak(text: String) -> void:

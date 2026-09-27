@@ -27,6 +27,15 @@ func _unhandled_input(event):
 	if event.is_action_pressed("interact"):
 		try_interact()
 	if event.is_action_pressed("ui_cancel"):
+		_open_pause_menu()
+
+
+func _open_pause_menu() -> void:
+	var menu := get_tree().get_first_node_in_group("pause_menu")
+	if menu and menu.has_method("open_menu"):
+		menu.open_menu()
+		get_viewport().set_input_as_handled()
+	else:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 

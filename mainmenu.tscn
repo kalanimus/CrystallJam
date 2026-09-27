@@ -43,10 +43,10 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(0, 28)
 layout_mode = 2
 
-[node name="StartButton" type="Button" parent="CenterContainer/Menu" unique_id=738402768]
+[node name="ContinueButton" type="Button" parent="CenterContainer/Menu" unique_id=738402768]
 custom_minimum_size = Vector2(240, 46)
 layout_mode = 2
-text = "Start"
+text = "Continue"
 
 [node name="OptionsButton" type="Button" parent="CenterContainer/Menu" unique_id=1858211399]
 custom_minimum_size = Vector2(240, 46)
