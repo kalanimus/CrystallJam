@@ -38,6 +38,15 @@ func show_text(text: String, speaker: String = "") -> void:
 	_lower_third.show_line(text, speaker)
 
 
+func show_lines(lines: Array) -> void:
+	_engaged = true
+	_finished = false
+	show()
+	dialogue_started.emit()
+	_lower_third.voice_enabled = _voice_toggle.button_pressed
+	_lower_third.queue_lines(lines)
+
+
 func start_demo() -> void:
 	_engaged = true
 	_finished = false

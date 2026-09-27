@@ -63,7 +63,7 @@ func _ready() -> void:
  Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
  fade.color.a=1
  var tw := create_tween();tw.tween_property(fade,"color:a",0.,2.3)
- tw.tween_callback(func(): waking=false;start_dialogue(["СОСЕД|Проснулся? Я уже думал, до вечера проспишь.","ВЫ|Ты давно так стоишь и смотришь на меня?","СОСЕД|А что ещё делать? Телевизор хочу посмотреть. Пульт куда-то пропал.","СОСЕД|Вроде за диван свалился. Подвинь его, пожалуйста."],"intro"))
+ tw.tween_callback(func(): waking=false;start_dialogue(["NEIGHBOR|Awake? I thought you'd sleep until evening.","YOU|Have you been standing there staring at me for long?","NEIGHBOR|What else is there to do? I want to watch TV. The remote has gone missing.","NEIGHBOR|It seems to have fallen behind the sofa. Move it, please."],"intro"))
  update_task()
 
 func tune_materials(n: Node) -> void:
@@ -140,15 +140,15 @@ func make_ui() -> void:
  objective=label(ui,Vector2(30,26),Vector2(850,80),22);inventory=label(ui,Vector2(30,108),Vector2(550,40),17);inventory.modulate=Color("cfbc91")
  var cross := Label.new();ui.add_child(cross);cross.text="·";cross.set_anchors_and_offsets_preset(Control.PRESET_CENTER);cross.add_theme_font_size_override("font_size",30)
  hint=Label.new();ui.add_child(hint);hint.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM);hint.position+=Vector2(-390,-104);hint.size=Vector2(780,70);hint.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;hint.add_theme_font_size_override("font_size",22)
- var help := label(ui,Vector2(30,820),Vector2(1090,28),15);help.text="WASD — движение     Мышь — взгляд     E / ЛКМ — действие, следующая реплика     Esc — пауза";help.modulate=Color("c1bba7")
+ var help := label(ui,Vector2(30,820),Vector2(1090,28),15);help.text="WASD — move     Mouse — look     LMB / E — action, next line     Esc — pause";help.modulate=Color("c1bba7")
  dialogue=PanelContainer.new();ui.add_child(dialogue);dialogue.position=Vector2(100,586);dialogue.size=Vector2(952,195)
  var style := StyleBoxFlat.new();style.bg_color=Color(.07,.075,.066,.97);style.border_color=Color("95815a");style.set_border_width_all(2);style.content_margin_left=24;style.content_margin_top=18;style.content_margin_right=24;style.content_margin_bottom=20;dialogue.add_theme_stylebox_override("panel",style)
  var col := VBoxContainer.new();dialogue.add_child(col);speaker=Label.new();col.add_child(speaker);speaker.add_theme_font_size_override("font_size",19);speaker.modulate=Color("d2ac6d")
  speech=Label.new();col.add_child(speech);speech.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;speech.add_theme_font_size_override("font_size",24);speech.custom_minimum_size=Vector2(900,102)
- var next := Label.new();col.add_child(next);next.text="E / ЛКМ  ·  продолжить";next.add_theme_font_size_override("font_size",16);dialogue.hide()
+ var next := Label.new();col.add_child(next);next.text="LMB / E  ·  continue";next.add_theme_font_size_override("font_size",16);dialogue.hide()
  ending=PanelContainer.new();ui.add_child(ending);ending.position=Vector2(230,230);ending.size=Vector2(690,335);ending.add_theme_stylebox_override("panel",style)
- var endtext := Label.new();ending.add_child(endtext);endtext.text="ПЕРВЫЙ ВЕЧЕР\n\nУровень 1 пройден\n\nПульт работает. Будильник всё ещё идёт.\n\nEnter — пройти заново";endtext.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;endtext.add_theme_font_size_override("font_size",25);ending.hide()
- pause_label=label(ui,Vector2(330,365),Vector2(560,100),26);pause_label.text="ПАУЗА\nEsc — продолжить";pause_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;pause_label.hide()
+ var endtext := Label.new();ending.add_child(endtext);endtext.text="FIRST EVENING\n\nLevel 1 complete\n\nThe remote works. The alarm clock is still ticking.\n\nEnter — restart";endtext.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;endtext.add_theme_font_size_override("font_size",25);ending.hide()
+ pause_label=label(ui,Vector2(330,365),Vector2(560,100),26);pause_label.text="PAUSED\nEsc — resume";pause_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;pause_label.hide()
  fade=ColorRect.new();ui.add_child(fade);fade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);fade.color=Color.BLACK;fade.mouse_filter=Control.MOUSE_FILTER_IGNORE
 
 func label(parent: Node, pos: Vector2, size: Vector2, font: int) -> Label:
@@ -191,11 +191,11 @@ func _physics_process(delta: float) -> void:
  if target and target.has_meta("action"):
   var a := str(target.get_meta("action"))
   match a:
-   "neighbor":hint.text="E  ·  Поговорить с соседом"
-   "sofa":hint.text="E  ·  Подвинуть диван" if step==1 else "Диван уже отодвинут"
-   "remote":hint.text="E  ·  Подобрать пульт" if step==2 else ""
-   "clock":hint.text="E  ·  Достать батарейки" if step==3 else "E  ·  Осмотреть будильник"
-   "tv":hint.text="E  ·  Телевизор"
+   "neighbor":hint.text="LMB / E  ·  Talk to the neighbor"
+   "sofa":hint.text="LMB / E  ·  Move the sofa" if step==1 else "Sofa already moved"
+   "remote":hint.text="LMB / E  ·  Pick up the remote" if step==2 else ""
+   "clock":hint.text="LMB / E  ·  Take the batteries" if step==3 else "LMB / E  ·  Inspect the alarm clock"
+   "tv":hint.text="LMB / E  ·  Television"
  else:target=null
 
 func interact(action: String) -> void:
@@ -209,13 +209,13 @@ func interact(action: String) -> void:
   "remote":
    if step==2:
 	remote.hide();remote.collision_layer=0;step=3;play_tone(370,.10)
-	start_dialogue(["ВЫ|Нашёл. Только он не работает… Внутри нет батареек.","СОСЕД|В будильнике посмотри. Там вроде такие же. Только не сбей время."],"none");update_task()
+	start_dialogue(["YOU|Found it. Only it doesn't work… There are no batteries inside.","NEIGHBOR|Check the alarm clock. It seems to use the same ones. Just don't reset the time."],"none");update_task()
   "clock":
    if step==3:
 	step=4;play_tone(210,.16);update_task()
-	start_dialogue(["ВЫ|Две батарейки. Подойдут. Вставлю их в пульт.","ВЫ|Погоди… Я вынул обе. Почему будильник всё ещё идёт?"],"none")
-   elif step>=4:start_dialogue(["ВЫ|Батареек нет. Но отсчёт продолжается."],"none")
-   else:start_dialogue(["ВЫ|Будильник отсчитывает время. Лучше пока не трогать."],"none")
+	start_dialogue(["YOU|Two batteries. These will do. I'll put them in the remote.","YOU|Wait… I took out both. Why is the alarm clock still ticking?"],"none")
+   elif step>=4:start_dialogue(["YOU|No batteries. But the countdown continues."],"none")
+   else:start_dialogue(["YOU|The alarm clock is counting down. Best not to touch it for now."],"none")
   "neighbor":
    if step==4:start_dialogue(["СОСЕД|Не смотри на часы. Они не от батареек идут.","ВЫ|А от чего?","СОСЕД|Садись. Передача уже начинается."],"finish")
    elif step==1:start_dialogue(["СОСЕД|Пульт за диваном. Подвинь диван, и увидишь."],"none")

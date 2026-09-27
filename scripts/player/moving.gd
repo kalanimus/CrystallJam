@@ -92,7 +92,7 @@ func _update_interaction_prompt() -> void:
 	if text.is_empty():
 		interaction_prompt.hide()
 	else:
-		interaction_prompt.text = "[ЛКМ] %s" % text
+		interaction_prompt.text = "[LMB] %s" % text
 		interaction_prompt.show()
 
 
