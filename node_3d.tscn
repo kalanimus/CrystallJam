@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://gxm6gtuexg4l" path="res://scripts/interactions/dialogue_interactable.gd" id="6_dialogue"]
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="7_menu"]
 [ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="8_room"]
+[ext_resource type="PackedScene" uid="uid://cvs0souu6h744" path="res://pers_anim2.tscn" id="9_4arys"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -19,7 +20,7 @@ size = Vector3(10, 1, 10)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqqax"]
 radius = 0.25
-height = 1.7033691
+height = 1.7144775
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_wcb3r"]
 radius = 0.25
@@ -85,11 +86,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008743048, -0.0063841343, -
 mesh = SubResource("BoxMesh_dqqax")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1181344834]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7651979, 1.9538476, 0.1581428)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7651979, 2.0653026, 0.1581428)
 script = ExtResource("1_a202f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=390289250]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.59770036, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.60325456, 0)
 shape = SubResource("CapsuleShape3D_dqqax")
 debug_color = Color(0.1764706, 0.5176471, 1, 1)
 
@@ -206,10 +207,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.84416056, 0.42219555, 1.20
 transform = Transform3D(1, 0, 0, 0, -0.02308442, 0.9997335, 0, -0.9997335, -0.02308442, -0.9375671, 2.99836, 1.071728)
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=291804066]
-transform = Transform3D(1, 0, 0, 0, 0.006830331, 0.9999768, 0, -0.9999768, 0.006830331, 1.9392004, 2.3992965, 3.0396416)
+transform = Transform3D(1, 0, 0, 0, 0.9975729, 0.06962932, 0, -0.06962932, 0.9975729, -1.854687, 1.3189986, 1.5811849)
 
 [node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=588944958]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.567214, -0.785388)
+
+[node name="pers_anim" parent="." unique_id=1774098336 instance=ExtResource("9_4arys")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5104456, 0.5018285, 0.07048082)
 
 [connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="CharacterBody3D" method="unlock_movement"]
 [connection signal="dialogue_finished" from="Interface/Control/DialogueTest" to="Interface/Inventory" method="_on_dialogue_finished"]

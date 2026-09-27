@@ -1,6 +1,6 @@
 extends Control
 
-const GAME_SCENE := "res://node_3d.tscn"
+const GAME_SCENE := "res://crazy_room.tscn"
 
 signal resume_requested
 

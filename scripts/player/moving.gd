@@ -31,10 +31,7 @@ func _unhandled_input(event):
 		try_interact()
 	if event.is_action_released("interact"):
 		_release_held_object()
-	if not _movement_locked and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		_get_inventory().use_active_item()
-	if not _movement_locked and event is InputEventKey and event.pressed and event.physical_keycode == KEY_Q:
-		_get_inventory().drop_active_item(self)
+
 	if event.is_action_pressed("ui_cancel"):
 		_open_pause_menu()
 
@@ -82,10 +79,6 @@ func _release_held_object() -> void:
 
 func get_camera_forward() -> Vector3:
 	return -$Head/Camera3D.global_transform.basis.z
-
-
-func _get_inventory():
-	return get_tree().get_first_node_in_group("inventory")
 
 
 func _physics_process(delta):
