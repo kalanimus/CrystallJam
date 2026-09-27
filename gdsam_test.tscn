@@ -1,0 +1,170 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://gdsam_test.gd" id="1_test"]
+[ext_resource type="Script" path="res://addons/gdsam/gdsam.gd" id="2_gdsam"]
+
+[node name="GDSAMTest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_test")
+
+[node name="GDSAM" type="Node" parent="."]
+script = ExtResource("2_gdsam")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09, 0.1, 0.13, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer"]
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer"]
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+theme_override_font_sizes/font_size = 26
+text = "GDSAM Voice Test"
+horizontal_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="SpeedLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Speed"
+
+[node name="Speed" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+max_value = 255.0
+
+[node name="PitchLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Pitch"
+
+[node name="Pitch" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+max_value = 255.0
+
+[node name="MouthLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Mouth"
+
+[node name="Mouth" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+max_value = 255.0
+
+[node name="ThroatLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Throat"
+
+[node name="Throat" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+max_value = 255.0
+
+[node name="SingingLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+layout_mode = 2
+text = "Singing"
+
+[node name="Singing" type="CheckBox" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PhoneticLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+layout_mode = 2
+text = "Phonetic"
+
+[node name="Phonetic" type="CheckBox" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VoiceLabel" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+layout_mode = 2
+text = "Voice"
+
+[node name="Voice" type="OptionButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 5
+popup/item_0/text = "SAM"
+popup/item_0/id = 0
+popup/item_1/text = "Elf"
+popup/item_1/id = 1
+popup/item_2/text = "Alien"
+popup/item_2/id = 2
+popup/item_3/text = "Stuffy"
+popup/item_3/id = 3
+popup/item_4/text = "Old Lady"
+popup/item_4/id = 4
+
+[node name="Input" type="LineEdit" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+placeholder_text = "Text to speak..."
+
+[node name="Buttons" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+theme_override_constants/separation = 8
+
+[node name="Speak" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Speak"
+
+[node name="Interrupt" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Interrupt"
+
+[node name="Back" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back"
+
+[node name="Status" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Ready."
+horizontal_alignment = 1

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://18rv4174bknh" path="res://moving.gd" id="1_a202f"]
 [ext_resource type="Script" uid="uid://cydepimyhex71" path="res://interactable.gd" id="2_noarx"]
+[ext_resource type="PackedScene" uid="uid://b88wcnwe7u8vv" path="res://dialogue_test.tscn" id="3_a0tk4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wcb3r"]
 size = Vector3(10, 1, 10)
@@ -87,3 +88,17 @@ mesh = SubResource("PrismMesh_1ifcq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1274517323]
 shape = SubResource("BoxShape3D_2h66b")
+
+[node name="Control" type="Control" parent="." unique_id=1679975312]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="DialogueTest" parent="Control" unique_id=409561209 instance=ExtResource("3_a0tk4")]
+layout_mode = 1
+
+[connection signal="my_custom_signal" from="StaticBody3D" to="Control/DialogueTest" method="_on_static_body_3d_my_custom_signal"]

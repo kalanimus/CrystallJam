@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://0i3yfgc4j2hb"]
+
+[ext_resource type="Script" uid="uid://bg7y3k4gdf0hk" path="res://mainmenu.gd" id="1_menu"]
+
+[node name="MainMenu" type="Control" unique_id=687930704]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="Background" type="ColorRect" parent="." unique_id=392812571]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09, 0.1, 0.13, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=364537476]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="VBoxContainer" parent="CenterContainer" unique_id=132704414]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/Menu" unique_id=1944867538]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Escape From Yourself"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="CenterContainer/Menu" unique_id=814606505]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="CenterContainer/Menu" unique_id=738402768]
+custom_minimum_size = Vector2(240, 46)
+layout_mode = 2
+text = "Start"
+
+[node name="OptionsButton" type="Button" parent="CenterContainer/Menu" unique_id=1858211399]
+custom_minimum_size = Vector2(240, 46)
+layout_mode = 2
+text = "Options"
+
+[node name="VoiceTestButton" type="Button" parent="CenterContainer/Menu" unique_id=1693430057]
+custom_minimum_size = Vector2(240, 46)
+layout_mode = 2
+text = "Voice Test"
+
+[node name="DialogueTestButton" type="Button" parent="CenterContainer/Menu" unique_id=1018998529]
+custom_minimum_size = Vector2(240, 46)
+layout_mode = 2
+text = "Dialogue Test"
+
+[node name="ExitButton" type="Button" parent="CenterContainer/Menu" unique_id=1957680048]
+custom_minimum_size = Vector2(240, 46)
+layout_mode = 2
+text = "Exit"

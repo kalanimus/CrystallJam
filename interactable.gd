@@ -1,4 +1,8 @@
 extends StaticBody3D
 
+signal my_custom_signal();
+
+
 func interact():
-	print("Вы взаимодействовали с объектом!")
+	my_custom_signal.emit();
+	
