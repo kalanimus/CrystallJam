@@ -15,14 +15,13 @@ const LINES := [
 
 var _finished: bool = false
 
-
-func _on_static_body_3d_my_custom_signal() -> void:
+func _on_interactive_cube_my_custom_signal() -> void:
 	$TopBar/Back.pressed.connect(_on_back_pressed)
 	$TopBar/Replay.pressed.connect(_on_replay_pressed)
 	_voice_toggle.toggled.connect(_on_voice_toggled)
 	_lower_third.queue_finished.connect(_on_queue_finished)
 	_lower_third.voice_enabled = _voice_toggle.button_pressed
-	_lower_third.queue_lines(LINES)
+	_lower_third.queue_lines(LINES);
 
 
 
