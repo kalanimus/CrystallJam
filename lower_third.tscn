@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="Script" path="res://lower_third.gd" id="1_lower"]
+[ext_resource type="Script" path="res://scripts/ui/lower_third.gd" id="1_lower"]
 [ext_resource type="Script" path="res://addons/gdsam/gdsam.gd" id="2_gdsam"]
 
 [node name="LowerThird" type="Control"]

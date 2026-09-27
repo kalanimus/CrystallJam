@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="Script" path="res://gdsam_test.gd" id="1_test"]
+[ext_resource type="Script" path="res://scripts/tests/gdsam_test.gd" id="1_test"]
 [ext_resource type="Script" path="res://addons/gdsam/gdsam.gd" id="2_gdsam"]
 
 [node name="GDSAMTest" type="Control"]
