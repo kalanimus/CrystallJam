@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://0i3yfgc4j2hb" path="res://mainmenu.tscn" id="4_c8h5o"]
 [ext_resource type="Script" uid="uid://bn8fbc6y0d3cv" path="res://scripts/interactions/npc_dialogue.gd" id="5_npc"]
 [ext_resource type="PackedScene" uid="uid://b0vyq5b1akult" path="res://room.glb" id="6_1j3yi"]
+[ext_resource type="Script" path="res://scripts/system/mesh_collision.gd" id="7_collision"]
 
 [sub_resource type="Environment" id="Environment_5dla7"]
 background_mode = 1
@@ -177,3 +178,4 @@ shape = SubResource("ConcavePolygonShape3D_c8h5o")
 
 [node name="room" parent="." unique_id=1854311196 instance=ExtResource("6_1j3yi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17813993, 0.4956547, 0.24105263)
+script = ExtResource("7_collision")
